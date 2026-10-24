@@ -13,7 +13,7 @@ from datetime import datetime, timezone
 import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
-PROJECTS = {"spi": "APB3_SPI_Master_Controller", "bridge": "AXI4_AHB5_Lite_Bridge"}
+PROJECTS = {"spi": "WHK_APB3_SPI_Master_Controller", "bridge": "AXI4_AHB5_Lite_Bridge"}
 
 
 def check_junit(path: Path) -> dict:

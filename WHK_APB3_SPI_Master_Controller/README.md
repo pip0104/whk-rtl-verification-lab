@@ -1,4 +1,4 @@
-# APB3 SPI Master Controller RTL and Verification
+# WHK APB3 SPI Master Controller RTL and Verification
 
 这是一个可复用的学习型 SPI Master IP：APB3 从接口完成寄存器配置，SPI 侧输出 `SCLK/MOSI/CS_n` 并采样 `MISO`。项目将 RTL、独立帧级参考模型、Icarus smoke、cocotb 端到端回归、事务级功能覆盖、可迁移 UVM 环境和 Verilator 代码覆盖入口放在同一目录中。
 
@@ -30,7 +30,7 @@
 PowerShell 示例：
 
 ```powershell
-cd 'C:\Users\Pip\Documents\总线验证\APB3_SPI_Master_Controller'
+cd .\WHK_APB3_SPI_Master_Controller
 .\scripts\run_reference_model_tests.ps1
 .\scripts\run_smoke_iverilog.ps1
 .\scripts\run_spi_regression.ps1
@@ -69,3 +69,8 @@ results/   实际运行生成的日志、JUnit 和 coverage JSON
 SCLK 分频：CLKDIV=0 → 50 MHz、=1 → 25 MHz（后者有 smoke 的 20 ns 边沿间隔实测印证）、=4 → 10 MHz。
 
 边界：FPGA 数字不是 ASIC 频率；这次 STA 用理想时钟、无寄生参数、单 corner，属于**乐观的签核式估算**，不是流片保证。
+
+
+## 项目标识
+
+本项目在作品集中使用 `WHK_APB3_SPI_Master_Controller` 标识，重点是 cocotb 边界回归与限定范围 FPV。旧证据中的目录名是改名前的历史运行路径；RTL 模块和协议名称不表示独有命名。

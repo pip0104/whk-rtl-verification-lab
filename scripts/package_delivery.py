@@ -21,7 +21,7 @@ def main():
         for name, expected in project["rtl_sha256"].items():
             if hashlib.sha256((ROOT / name).read_bytes()).hexdigest() != expected:
                 raise SystemExit("RTL changed after verification: " + name)
-    spi = ROOT / "APB3_SPI_Master_Controller"
+    spi = ROOT / "WHK_APB3_SPI_Master_Controller"
     proof = json.loads(Path(summary["formal"]["manifest"]).read_text(encoding="utf-8"))
     if not proof.get("passed"):
         raise SystemExit("Formal proof manifest did not pass")
@@ -54,7 +54,7 @@ def main():
         destination = selected / source.relative_to(ROOT / "results")
         destination.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(source, destination)
-    for key, name in (("spi", "APB3_SPI_Master_Controller"), ("bridge", "AXI4_AHB5_Lite_Bridge")):
+    for key, name in (("spi", "WHK_APB3_SPI_Master_Controller"), ("bridge", "AXI4_AHB5_Lite_Bridge")):
         for filename in (f"{key}_regression.xml", "functional_coverage.json"):
             destination = selected / key / filename
             destination.parent.mkdir(parents=True, exist_ok=True)

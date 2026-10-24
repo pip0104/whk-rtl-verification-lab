@@ -27,5 +27,5 @@ jobs:
           name: verification-evidence
           path: |
             results/
-            APB3_SPI_Master_Controller/results/
+            WHK_APB3_SPI_Master_Controller/results/
             AXI4_AHB5_Lite_Bridge/results/

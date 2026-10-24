@@ -1,9 +1,9 @@
 # SPI scoped formal checks
 
-Run from any working directory with Python 3 and `sby`, `yosys`, `boolector` on PATH:
+Run from the repository root with Python 3 and `sby`, `yosys`, `boolector` on PATH:
 
 ```text
-python APB3_SPI_Master_Controller/formal/run_formal.py
+python WHK_APB3_SPI_Master_Controller/formal/run_formal.py
 ```
 
 On Windows first dot-source the installed OSS CAD Suite `environment.ps1`, then invoke a real Python executable (the Windows Store `python.exe` alias is insufficient). No private user path is embedded in the runner. Windows SBY receives a relative output path to avoid its bundled Python launcher mishandling non-ASCII absolute command-line paths.
