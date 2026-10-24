@@ -1,8 +1,8 @@
-# RTL Verification Portfolio
+# WHK RTL Verification Lab
 
 Two educational RTL projects with executable verification: an APB3 SPI master and an AXI4-to-AHB-Lite bridge. The focus of the 2026-10-24 work is reproducible bug discovery, correction, regression and scoped formal verification.
 
-Repository: [pip0104/rtl-verification-portfolio](https://github.com/pip0104/rtl-verification-portfolio). See [GitHub Actions](https://github.com/pip0104/rtl-verification-portfolio/actions) for actual hosted verification results.
+Repository: [pip0104/whk-rtl-verification-lab](https://github.com/pip0104/whk-rtl-verification-lab). See [GitHub Actions](https://github.com/pip0104/whk-rtl-verification-lab/actions) for actual hosted verification results.
 
 ## Start here
 
@@ -31,7 +31,7 @@ Windows, with the installed toolchain activated by the wrapper:
 
 The entrypoint runs reference-model unit tests, RTL smoke tests, bridge parameter **elaboration** checks, original cocotb regressions and new SPI directed tests. It rejects failed, empty or entirely skipped JUnit suites even if a subprocess returns zero. Each run replaces its expected report files before checking them.
 
-GitHub Actions uses the same entrypoint. The workflow is prepared locally; a green GitHub badge requires a real hosted run and is not claimed by a local run.
+GitHub Actions uses the same entrypoint. The complete simulation and scoped formal workflow passed on Ubuntu 22.04: [verified hosted run](https://github.com/pip0104/whk-rtl-verification-lab/actions/runs/40084460034). Windows local verification is recorded separately in the frozen evidence.
 
 ## Evidence boundaries
 
