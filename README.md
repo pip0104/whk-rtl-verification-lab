@@ -9,7 +9,7 @@ Repository: [pip0104/whk-rtl-verification-lab](https://github.com/pip0104/whk-rt
 - [Current evidence and interview wording](docs/面试证据与口径.md)
 - [SPI divider defect and directed regression](WHK_APB3_SPI_Master_Controller/docs/20261024_spi_fix.md)
 - [SPI formal scope, assumptions and results](WHK_APB3_SPI_Master_Controller/docs/20261024_formal.md)
-- [Bridge phase, boundary and regression corrections](AXI4_AHB5_Lite_Bridge/docs/20261024_bridge_fix.md)
+- [Bridge phase, boundary and regression corrections](WHK_AXI4_AHB5_Lite_Bridge/docs/20261024_bridge_fix.md)
 - [GitHub publication status](docs/GitHub发布说明.md)
 - Fresh machine-readable results: `results/verification_summary.json` after a run.
 

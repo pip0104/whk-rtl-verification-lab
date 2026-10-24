@@ -28,4 +28,4 @@ jobs:
           path: |
             results/
             WHK_APB3_SPI_Master_Controller/results/
-            AXI4_AHB5_Lite_Bridge/results/
+            WHK_AXI4_AHB5_Lite_Bridge/results/

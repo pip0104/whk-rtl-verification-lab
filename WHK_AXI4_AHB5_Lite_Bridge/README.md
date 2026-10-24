@@ -25,7 +25,7 @@
 项目可使用位于 `F:\EDA\oss-cad-suite` 的开源工具链运行基础验证：
 
 ```powershell
-cd 'C:\Users\Pip\Documents\总线验证\AXI4_AHB5_Lite_Bridge'
+cd .\WHK_AXI4_AHB5_Lite_Bridge
 .\scripts\run_reference_model_tests.ps1
 .\scripts\run_smoke_iverilog.ps1
 .\scripts\run_parameter_sweep_iverilog.ps1

@@ -54,7 +54,7 @@ def main():
         destination = selected / source.relative_to(ROOT / "results")
         destination.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(source, destination)
-    for key, name in (("spi", "WHK_APB3_SPI_Master_Controller"), ("bridge", "AXI4_AHB5_Lite_Bridge")):
+    for key, name in (("spi", "WHK_APB3_SPI_Master_Controller"), ("bridge", "WHK_AXI4_AHB5_Lite_Bridge")):
         for filename in (f"{key}_regression.xml", "functional_coverage.json"):
             destination = selected / key / filename
             destination.parent.mkdir(parents=True, exist_ok=True)

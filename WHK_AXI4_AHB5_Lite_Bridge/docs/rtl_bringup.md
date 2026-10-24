@@ -33,7 +33,7 @@ IDLE -> VALIDATE_CMD -> PREPARE_BEAT -> AHB_WAIT -> READ_RESPONSE -> IDLE
 
 ## 虚拟机运行步骤
 
-1. 将 `AXI4_AHB5_Lite_Bridge` 目录放到 Linux 虚拟机可写路径。
+1. 将 `WHK_AXI4_AHB5_Lite_Bridge` 目录放到 Linux 虚拟机可写路径。
 2. 确认可执行文件：`which vcs` 和 `which verdi`；若找不到，记录实际路径。
 3. 在项目根目录执行 `VCS_BIN=/实际/vcs路径 scripts/run_smoke_vcs.sh`。
 4. 查看 `build/smoke/compile.log`。若编译失败，保留完整日志，不要先改代码。
