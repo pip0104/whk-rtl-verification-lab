@@ -1,0 +1,115 @@
+SBY 17:49:23 [..\results\formal\20261024T094901982316Z\timing] Removing directory 'D:\秋招相关\项目深挖\CPU-DV-Portfolio-20261024\APB3_SPI_Master_Controller\results\formal\20261024T094901982316Z\timing'.
+SBY 17:49:23 [..\results\formal\20261024T094901982316Z\timing] Copy 'D:\秋招相关\项目深挖\CPU-DV-Portfolio-20261024\APB3_SPI_Master_Controller\formal\..\rtl\apb3_spi_master.sv' to 'D:\秋招相关\项目深挖\CPU-DV-Portfolio-20261024\APB3_SPI_Master_Controller\formal\..\results\formal\20261024T094901982316Z\timing\src\apb3_spi_master.sv'.
+SBY 17:49:23 [..\results\formal\20261024T094901982316Z\timing] Copy 'D:\秋招相关\项目深挖\CPU-DV-Portfolio-20261024\APB3_SPI_Master_Controller\formal\spi_properties.svh' to 'D:\秋招相关\项目深挖\CPU-DV-Portfolio-20261024\APB3_SPI_Master_Controller\formal\..\results\formal\20261024T094901982316Z\timing\src\spi_properties.svh'.
+SBY 17:49:23 [..\results\formal\20261024T094901982316Z\timing] Copy 'D:\秋招相关\项目深挖\CPU-DV-Portfolio-20261024\APB3_SPI_Master_Controller\formal\spi_formal.sv' to 'D:\秋招相关\项目深挖\CPU-DV-Portfolio-20261024\APB3_SPI_Master_Controller\formal\..\results\formal\20261024T094901982316Z\timing\src\spi_formal.sv'.
+SBY 17:49:23 [..\results\formal\20261024T094901982316Z\timing] engine_0: smtbmc boolector
+SBY 17:49:23 [..\results\formal\20261024T094901982316Z\timing] base: starting process "cd ..\results\formal\20261024T094901982316Z\timing/src& yosys -ql ../model/design.log ../model/design.ys"
+SBY 17:49:23 [..\results\formal\20261024T094901982316Z\timing] base: Warning: Wire spi_formal.\pclk is used but has no driver.
+SBY 17:49:24 [..\results\formal\20261024T094901982316Z\timing] base: finished (returncode=0)
+SBY 17:49:24 [..\results\formal\20261024T094901982316Z\timing] prep: starting process "cd ..\results\formal\20261024T094901982316Z\timing/model& yosys -ql design_prep.log design_prep.ys"
+SBY 17:49:24 [..\results\formal\20261024T094901982316Z\timing] prep: Warning: Wire spi_formal.\pclk is used but has no driver.
+SBY 17:49:24 [..\results\formal\20261024T094901982316Z\timing] prep: finished (returncode=0)
+SBY 17:49:24 [..\results\formal\20261024T094901982316Z\timing] smt2: starting process "cd ..\results\formal\20261024T094901982316Z\timing/model& yosys -ql design_smt2.log design_smt2.ys"
+SBY 17:49:24 [..\results\formal\20261024T094901982316Z\timing] smt2: finished (returncode=0)
+SBY 17:49:24 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: starting process "cd ..\results\formal\20261024T094901982316Z\timing& yosys-smtbmc -s boolector --presat --unroll --noprogress -t 40  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY 17:49:24 [..\results\formal\20261024T094901982316Z\timing] engine_0.induction: starting process "cd ..\results\formal\20261024T094901982316Z\timing& yosys-smtbmc -s boolector --presat --unroll -i --noprogress -t 40  --append 0 --dump-vcd engine_0/trace_induct.vcd --dump-yw engine_0/trace_induct.yw --dump-vlogtb engine_0/trace_induct_tb.v --dump-smtc engine_0/trace_induct.smtc model/design_smt2.smt2"
+SBY 17:49:24 [..\results\formal\20261024T094901982316Z\timing] engine_0.induction: ##   0:00:00  Solver: boolector
+SBY 17:49:24 [..\results\formal\20261024T094901982316Z\timing] engine_0.induction: ##   0:00:00  Trying induction in step 40..
+SBY 17:49:25 [..\results\formal\20261024T094901982316Z\timing] engine_0.induction: ##   0:00:00  Trying induction in step 39..
+SBY 17:49:25 [..\results\formal\20261024T094901982316Z\timing] engine_0.induction: ##   0:00:00  Trying induction in step 38..
+SBY 17:49:25 [..\results\formal\20261024T094901982316Z\timing] engine_0.induction: ##   0:00:00  Trying induction in step 37..
+SBY 17:49:25 [..\results\formal\20261024T094901982316Z\timing] engine_0.induction: ##   0:00:00  Temporal induction successful.
+SBY 17:49:25 [..\results\formal\20261024T094901982316Z\timing] engine_0.induction: ##   0:00:00  Status: passed
+SBY 17:49:25 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:00  Solver: boolector
+SBY 17:49:25 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:00  Checking assumptions in step 0..
+SBY 17:49:25 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:00  Checking assertions in step 0..
+SBY 17:49:25 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:00  Checking assumptions in step 1..
+SBY 17:49:25 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:00  Checking assertions in step 1..
+SBY 17:49:25 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:00  Checking assumptions in step 2..
+SBY 17:49:25 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:00  Checking assertions in step 2..
+SBY 17:49:25 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:00  Checking assumptions in step 3..
+SBY 17:49:25 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:00  Checking assertions in step 3..
+SBY 17:49:25 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:00  Checking assumptions in step 4..
+SBY 17:49:25 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:00  Checking assertions in step 4..
+SBY 17:49:25 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:00  Checking assumptions in step 5..
+SBY 17:49:25 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:00  Checking assertions in step 5..
+SBY 17:49:25 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:00  Checking assumptions in step 6..
+SBY 17:49:25 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:00  Checking assertions in step 6..
+SBY 17:49:25 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:00  Checking assumptions in step 7..
+SBY 17:49:25 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:00  Checking assertions in step 7..
+SBY 17:49:25 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:00  Checking assumptions in step 8..
+SBY 17:49:25 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:00  Checking assertions in step 8..
+SBY 17:49:25 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:00  Checking assumptions in step 9..
+SBY 17:49:25 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:00  Checking assertions in step 9..
+SBY 17:49:25 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:00  Checking assumptions in step 10..
+SBY 17:49:25 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:00  Checking assertions in step 10..
+SBY 17:49:25 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:00  Checking assumptions in step 11..
+SBY 17:49:25 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:00  Checking assertions in step 11..
+SBY 17:49:25 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:00  Checking assumptions in step 12..
+SBY 17:49:25 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:00  Checking assertions in step 12..
+SBY 17:49:25 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:00  Checking assumptions in step 13..
+SBY 17:49:25 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:00  Checking assertions in step 13..
+SBY 17:49:25 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:01  Checking assumptions in step 14..
+SBY 17:49:25 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:01  Checking assertions in step 14..
+SBY 17:49:25 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:01  Checking assumptions in step 15..
+SBY 17:49:26 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:01  Checking assertions in step 15..
+SBY 17:49:26 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:01  Checking assumptions in step 16..
+SBY 17:49:26 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:01  Checking assertions in step 16..
+SBY 17:49:26 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:01  Checking assumptions in step 17..
+SBY 17:49:26 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:01  Checking assertions in step 17..
+SBY 17:49:26 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:01  Checking assumptions in step 18..
+SBY 17:49:26 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:01  Checking assertions in step 18..
+SBY 17:49:26 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:01  Checking assumptions in step 19..
+SBY 17:49:26 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:02  Checking assertions in step 19..
+SBY 17:49:26 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:02  Checking assumptions in step 20..
+SBY 17:49:27 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:02  Checking assertions in step 20..
+SBY 17:49:27 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:02  Checking assumptions in step 21..
+SBY 17:49:27 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:02  Checking assertions in step 21..
+SBY 17:49:27 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:02  Checking assumptions in step 22..
+SBY 17:49:27 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:02  Checking assertions in step 22..
+SBY 17:49:27 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:03  Checking assumptions in step 23..
+SBY 17:49:28 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:03  Checking assertions in step 23..
+SBY 17:49:28 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:03  Checking assumptions in step 24..
+SBY 17:49:28 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:03  Checking assertions in step 24..
+SBY 17:49:28 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:03  Checking assumptions in step 25..
+SBY 17:49:28 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:03  Checking assertions in step 25..
+SBY 17:49:28 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:03  Checking assumptions in step 26..
+SBY 17:49:28 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:04  Checking assertions in step 26..
+SBY 17:49:29 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:04  Checking assumptions in step 27..
+SBY 17:49:29 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:04  Checking assertions in step 27..
+SBY 17:49:29 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:04  Checking assumptions in step 28..
+SBY 17:49:29 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:04  Checking assertions in step 28..
+SBY 17:49:29 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:05  Checking assumptions in step 29..
+SBY 17:49:30 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:05  Checking assertions in step 29..
+SBY 17:49:30 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:05  Checking assumptions in step 30..
+SBY 17:49:30 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:05  Checking assertions in step 30..
+SBY 17:49:30 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:05  Checking assumptions in step 31..
+SBY 17:49:31 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:06  Checking assertions in step 31..
+SBY 17:49:31 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:06  Checking assumptions in step 32..
+SBY 17:49:31 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:06  Checking assertions in step 32..
+SBY 17:49:31 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:07  Checking assumptions in step 33..
+SBY 17:49:32 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:07  Checking assertions in step 33..
+SBY 17:49:32 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:07  Checking assumptions in step 34..
+SBY 17:49:33 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:08  Checking assertions in step 34..
+SBY 17:49:33 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:08  Checking assumptions in step 35..
+SBY 17:49:34 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:09  Checking assertions in step 35..
+SBY 17:49:34 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:09  Checking assumptions in step 36..
+SBY 17:49:35 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:10  Checking assertions in step 36..
+SBY 17:49:36 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:11  Checking assumptions in step 37..
+SBY 17:49:36 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:11  Checking assertions in step 37..
+SBY 17:49:37 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:12  Checking assumptions in step 38..
+SBY 17:49:37 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:12  Checking assertions in step 38..
+SBY 17:49:37 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:13  Checking assumptions in step 39..
+SBY 17:49:38 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:13  Checking assertions in step 39..
+SBY 17:49:38 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: ##   0:00:13  Status: passed
+SBY 17:49:38 [..\results\formal\20261024T094901982316Z\timing] engine_0.induction: finished (returncode=0)
+SBY 17:49:38 [..\results\formal\20261024T094901982316Z\timing] engine_0.induction: Status returned by engine for induction: pass
+SBY 17:49:38 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: finished (returncode=0)
+SBY 17:49:38 [..\results\formal\20261024T094901982316Z\timing] engine_0.basecase: Status returned by engine for basecase: pass
+SBY 17:49:38 [..\results\formal\20261024T094901982316Z\timing] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:15 (15)
+SBY 17:49:38 [..\results\formal\20261024T094901982316Z\timing] summary: Elapsed process time unvailable on Windows
+SBY 17:49:38 [..\results\formal\20261024T094901982316Z\timing] summary: engine_0 (smtbmc boolector) returned pass for basecase
+SBY 17:49:38 [..\results\formal\20261024T094901982316Z\timing] summary: engine_0 (smtbmc boolector) returned pass for induction
+SBY 17:49:38 [..\results\formal\20261024T094901982316Z\timing] summary: engine_0 did not produce any traces
+SBY 17:49:38 [..\results\formal\20261024T094901982316Z\timing] summary: successful proof by k-induction.
+SBY 17:49:38 [..\results\formal\20261024T094901982316Z\timing] DONE (PASS, rc=0)

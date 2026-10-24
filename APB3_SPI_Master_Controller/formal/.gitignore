@@ -1,0 +1,9 @@
+/baseline/
+/spi_reset/
+/spi_config/
+/spi_timing/
+/spi_rx/
+/spi_cover/
+/__pycache__/
+/spi/
+!/evidence/**/*.vcd

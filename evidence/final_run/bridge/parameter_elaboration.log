@@ -1,0 +1,3 @@
+COMMAND: ["vvp", "D:\\绉嬫嫑鐩稿叧\\椤圭洰娣辨寲\\CPU-DV-Portfolio-20261024\\AXI4_AHB5_Lite_Bridge\\build\\portable_smoke\\parameters.vvp"]
+PARAMETER_SWEEP_PASS: FIFO_DEPTH=8/16/32/64/128 elaborated
+D:\秋招相关\项目深挖\CPU-DV-Portfolio-20261024\AXI4_AHB5_Lite_Bridge\tb\tb_parameter_sweep.sv:58: $finish called at 1000 (1ps)

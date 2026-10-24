@@ -1,0 +1,54 @@
+SBY 17:49:02 [..\results\formal\20261024T094901982316Z\baseline] Removing directory 'D:\秋招相关\项目深挖\CPU-DV-Portfolio-20261024\APB3_SPI_Master_Controller\results\formal\20261024T094901982316Z\baseline'.
+SBY 17:49:02 [..\results\formal\20261024T094901982316Z\baseline] Copy 'D:\秋招相关\项目深挖\CPU-DV-Portfolio-20261024\APB3_SPI_Master_Controller\formal\baseline_apb3_spi_master.sv' to 'D:\秋招相关\项目深挖\CPU-DV-Portfolio-20261024\APB3_SPI_Master_Controller\formal\..\results\formal\20261024T094901982316Z\baseline\src\baseline_apb3_spi_master.sv'.
+SBY 17:49:02 [..\results\formal\20261024T094901982316Z\baseline] Copy 'D:\秋招相关\项目深挖\CPU-DV-Portfolio-20261024\APB3_SPI_Master_Controller\formal\spi_properties.svh' to 'D:\秋招相关\项目深挖\CPU-DV-Portfolio-20261024\APB3_SPI_Master_Controller\formal\..\results\formal\20261024T094901982316Z\baseline\src\spi_properties.svh'.
+SBY 17:49:02 [..\results\formal\20261024T094901982316Z\baseline] Copy 'D:\秋招相关\项目深挖\CPU-DV-Portfolio-20261024\APB3_SPI_Master_Controller\formal\spi_formal.sv' to 'D:\秋招相关\项目深挖\CPU-DV-Portfolio-20261024\APB3_SPI_Master_Controller\formal\..\results\formal\20261024T094901982316Z\baseline\src\spi_formal.sv'.
+SBY 17:49:02 [..\results\formal\20261024T094901982316Z\baseline] engine_0: smtbmc boolector
+SBY 17:49:02 [..\results\formal\20261024T094901982316Z\baseline] base: starting process "cd ..\results\formal\20261024T094901982316Z\baseline/src& yosys -ql ../model/design.log ../model/design.ys"
+SBY 17:49:02 [..\results\formal\20261024T094901982316Z\baseline] base: Warning: Wire spi_formal.\pclk is used but has no driver.
+SBY 17:49:03 [..\results\formal\20261024T094901982316Z\baseline] base: finished (returncode=0)
+SBY 17:49:03 [..\results\formal\20261024T094901982316Z\baseline] prep: starting process "cd ..\results\formal\20261024T094901982316Z\baseline/model& yosys -ql design_prep.log design_prep.ys"
+SBY 17:49:03 [..\results\formal\20261024T094901982316Z\baseline] prep: Warning: Wire spi_formal.\pclk is used but has no driver.
+SBY 17:49:03 [..\results\formal\20261024T094901982316Z\baseline] prep: finished (returncode=0)
+SBY 17:49:03 [..\results\formal\20261024T094901982316Z\baseline] smt2: starting process "cd ..\results\formal\20261024T094901982316Z\baseline/model& yosys -ql design_smt2.log design_smt2.ys"
+SBY 17:49:03 [..\results\formal\20261024T094901982316Z\baseline] smt2: finished (returncode=0)
+SBY 17:49:03 [..\results\formal\20261024T094901982316Z\baseline] engine_0: starting process "cd ..\results\formal\20261024T094901982316Z\baseline& yosys-smtbmc -s boolector --presat --unroll --noprogress -t 32  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY 17:49:03 [..\results\formal\20261024T094901982316Z\baseline] engine_0: ##   0:00:00  Solver: boolector
+SBY 17:49:03 [..\results\formal\20261024T094901982316Z\baseline] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 17:49:03 [..\results\formal\20261024T094901982316Z\baseline] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 17:49:03 [..\results\formal\20261024T094901982316Z\baseline] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY 17:49:03 [..\results\formal\20261024T094901982316Z\baseline] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY 17:49:03 [..\results\formal\20261024T094901982316Z\baseline] engine_0: ##   0:00:00  Checking assumptions in step 2..
+SBY 17:49:03 [..\results\formal\20261024T094901982316Z\baseline] engine_0: ##   0:00:00  Checking assertions in step 2..
+SBY 17:49:03 [..\results\formal\20261024T094901982316Z\baseline] engine_0: ##   0:00:00  Checking assumptions in step 3..
+SBY 17:49:03 [..\results\formal\20261024T094901982316Z\baseline] engine_0: ##   0:00:00  Checking assertions in step 3..
+SBY 17:49:03 [..\results\formal\20261024T094901982316Z\baseline] engine_0: ##   0:00:00  Checking assumptions in step 4..
+SBY 17:49:03 [..\results\formal\20261024T094901982316Z\baseline] engine_0: ##   0:00:00  Checking assertions in step 4..
+SBY 17:49:03 [..\results\formal\20261024T094901982316Z\baseline] engine_0: ##   0:00:00  Checking assumptions in step 5..
+SBY 17:49:03 [..\results\formal\20261024T094901982316Z\baseline] engine_0: ##   0:00:00  Checking assertions in step 5..
+SBY 17:49:03 [..\results\formal\20261024T094901982316Z\baseline] engine_0: ##   0:00:00  Checking assumptions in step 6..
+SBY 17:49:03 [..\results\formal\20261024T094901982316Z\baseline] engine_0: ##   0:00:00  Checking assertions in step 6..
+SBY 17:49:04 [..\results\formal\20261024T094901982316Z\baseline] engine_0: ##   0:00:00  Checking assumptions in step 7..
+SBY 17:49:04 [..\results\formal\20261024T094901982316Z\baseline] engine_0: ##   0:00:00  Checking assertions in step 7..
+SBY 17:49:04 [..\results\formal\20261024T094901982316Z\baseline] engine_0: ##   0:00:00  Checking assumptions in step 8..
+SBY 17:49:04 [..\results\formal\20261024T094901982316Z\baseline] engine_0: ##   0:00:00  Checking assertions in step 8..
+SBY 17:49:04 [..\results\formal\20261024T094901982316Z\baseline] engine_0: ##   0:00:00  Checking assumptions in step 9..
+SBY 17:49:04 [..\results\formal\20261024T094901982316Z\baseline] engine_0: ##   0:00:00  Checking assertions in step 9..
+SBY 17:49:04 [..\results\formal\20261024T094901982316Z\baseline] engine_0: ##   0:00:00  BMC failed!
+SBY 17:49:04 [..\results\formal\20261024T094901982316Z\baseline] engine_0: ##   0:00:00  Assert failed in spi_formal.dut: count_bound
+SBY 17:49:04 [..\results\formal\20261024T094901982316Z\baseline] engine_0: ##   0:00:00  Assert failed in spi_formal.dut: edge_clear
+SBY 17:49:04 [..\results\formal\20261024T094901982316Z\baseline] engine_0: ##   0:00:00  Assert failed in spi_formal.dut: edge_due
+SBY 17:49:04 [..\results\formal\20261024T094901982316Z\baseline] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace.vcd
+SBY 17:49:04 [..\results\formal\20261024T094901982316Z\baseline] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace_tb.v
+SBY 17:49:04 [..\results\formal\20261024T094901982316Z\baseline] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace.smtc
+SBY 17:49:04 [..\results\formal\20261024T094901982316Z\baseline] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace.yw
+SBY 17:49:04 [..\results\formal\20261024T094901982316Z\baseline] engine_0: ##   0:00:00  Status: failed
+SBY 17:49:04 [..\results\formal\20261024T094901982316Z\baseline] engine_0: finished (returncode=1)
+SBY 17:49:04 [..\results\formal\20261024T094901982316Z\baseline] engine_0: Status returned by engine: FAIL
+SBY 17:49:04 [..\results\formal\20261024T094901982316Z\baseline] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:01 (1)
+SBY 17:49:04 [..\results\formal\20261024T094901982316Z\baseline] summary: Elapsed process time unvailable on Windows
+SBY 17:49:04 [..\results\formal\20261024T094901982316Z\baseline] summary: engine_0 (smtbmc boolector) returned FAIL
+SBY 17:49:04 [..\results\formal\20261024T094901982316Z\baseline] summary: counterexample trace: ..\results\formal\20261024T094901982316Z\baseline\engine_0\trace.vcd
+SBY 17:49:04 [..\results\formal\20261024T094901982316Z\baseline] summary:   failed assertion spi_formal.dut.count_bound at spi_properties.svh:47.9-47.55 step 9
+SBY 17:49:04 [..\results\formal\20261024T094901982316Z\baseline] summary:   failed assertion spi_formal.dut.edge_clear at spi_properties.svh:55.11-55.46 step 9
+SBY 17:49:04 [..\results\formal\20261024T094901982316Z\baseline] summary:   failed assertion spi_formal.dut.edge_due at spi_properties.svh:54.11-54.56 step 9
+SBY 17:49:04 [..\results\formal\20261024T094901982316Z\baseline] DONE (FAIL, rc=2)

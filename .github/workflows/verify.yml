@@ -1,0 +1,30 @@
+name: RTL verification
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: YosysHQ/setup-oss-cad-suite@v4
+        with:
+          version: '2026-07-27'
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+      - run: python -m pip install -r requirements.txt
+      - run: python scripts/verify.py --project all --formal
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: verification-evidence
+          path: |
+            results/
+            APB3_SPI_Master_Controller/results/
+            AXI4_AHB5_Lite_Bridge/results/

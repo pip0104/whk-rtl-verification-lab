@@ -1,0 +1,33 @@
+[tasks]
+reset
+config
+timing
+rx
+cover
+
+[options]
+reset: mode prove
+config: mode prove
+timing: mode prove
+rx: mode prove
+cover: mode cover
+depth 40
+timeout 120
+
+[engines]
+smtbmc boolector
+
+[script]
+reset: read_verilog -formal -sv -D P_RESET apb3_spi_master.sv spi_formal.sv
+config: read_verilog -formal -sv -D P_CONFIG apb3_spi_master.sv spi_formal.sv
+timing: read_verilog -formal -sv -D P_TIMING apb3_spi_master.sv spi_formal.sv
+rx: read_verilog -formal -sv -D P_RX apb3_spi_master.sv spi_formal.sv
+cover: read_verilog -formal -sv -D P_COVER apb3_spi_master.sv spi_formal.sv
+prep -top spi_formal
+async2sync
+dffunmap
+
+[files]
+../rtl/apb3_spi_master.sv
+spi_properties.svh
+spi_formal.sv

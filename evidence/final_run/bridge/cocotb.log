@@ -1,0 +1,49 @@
+COMMAND: ["C:\\Users\\Pip\\Documents\\总线验证\\AXI4_AHB5_Lite_Bridge\\.venv_cocotb\\Scripts\\python.exe", "D:\\秋招相关\\项目深挖\\CPU-DV-Portfolio-20261024\\AXI4_AHB5_Lite_Bridge\\tests\\cocotb\\run_bridge_regression.py"]
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'cmd_head[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'cmd_head[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'cmd_head[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'cmd_head[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'wdata_head[36:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'wdata_head[36:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'active_cmd_q[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'active_cmd_q[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'active_cmd_q[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'active_cmd_q[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'active_cmd_q[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'wdata_head[36:0]').
+     -.--ns INFO     gpi                                ..\gpi\GpiCommon.cpp:242  in gpi_load_users                  Loaded entry library: 'F:\Codex\runtimes\codex-primary-runtime\dependencies\python\python312.dll'
+     -.--ns INFO     gpi                                ..\gpi\GpiCommon.cpp:234  in gpi_load_users                  Running entry func 'initialize' from loaded library 'C:\Users\Pip\Documents\������֤\AXI4_AHB5_Lite_Bridge\.venv_cocotb\Lib\site-packages\cocotb\simulator.cp312-win_amd64.pyd'
+Log message construction failed: (error code) -1
+     -.--ns INFO     gpi                                ..\gpi\GpiCommon.cpp:74   in gpi_print_registered_impl       GPI: VPI support registered
+     0.00ns INFO     cocotb.initialize                  Seeding Python random module with 1792835341
+     0.00ns INFO     cocotb.initialize                  Initialized cocotb v2.1.0 from C:\Users\Pip\Documents\总线验证\AXI4_AHB5_Lite_Bridge\.venv_cocotb\Lib\site-packages\cocotb
+     0.00ns INFO     cocotb.initialize                  Running on Icarus Verilog version 14.0 (devel)
+     0.00ns INFO     cocotb.regression                  Running tests
+     0.00ns INFO     cocotb.regression                  running test_bridge_regression.full_protocol_regression (1/5)
+                                                            Run directed, error, stress, reset and seed-stable random scenarios.
+ 13725.00ns INFO     test                               Functional regression complete: 644 transaction-level coverage samples
+ 13725.00ns INFO     cocotb.regression                  test_bridge_regression.full_protocol_regression passed
+ 13725.00ns INFO     cocotb.regression                  running test_bridge_deepening.separate_address_and_data_phase (2/5)
+                                                            Early HRDATA sampling returns poison instead of the addressed word.
+ 13935.00ns INFO     cocotb.regression                  test_bridge_deepening.separate_address_and_data_phase passed
+ 13935.00ns INFO     cocotb.regression                  running test_bridge_deepening.late_illegal_write_has_zero_side_effects (3/5)
+                                                            A bad second strobe/late WLAST must be found before the first AHB write.
+ 14215.00ns INFO     cocotb.regression                  test_bridge_deepening.late_illegal_write_has_zero_side_effects passed
+ 14215.00ns INFO     cocotb.regression                  running test_bridge_deepening.page_boundary_and_two_cycle_error (4/5)
+                                                            Reject INCR crossing 4KB; permit FIXED/WRAP ending inside that page.
+ 14725.00ns INFO     cocotb.regression                  test_bridge_deepening.page_boundary_and_two_cycle_error passed
+ 14725.00ns INFO     cocotb.regression                  running test_bridge_deepening.required_coverage_bins_fail_closed (5/5)
+                                                            Empty/partial coverage must fail even when the simulator ran normally.
+ 14725.00ns INFO     cocotb.regression                  test_bridge_deepening.required_coverage_bins_fail_closed passed
+ 14725.00ns INFO     cocotb.regression                  ************************************************************************************************************************
+                                                        ** TEST                                                            STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ************************************************************************************************************************
+                                                        ** test_bridge_regression.full_protocol_regression                  PASS       13725.00           0.25      54900.00  **
+                                                        ** test_bridge_deepening.separate_address_and_data_phase            PASS         210.00           0.02      13124.94  **
+                                                        ** test_bridge_deepening.late_illegal_write_has_zero_side_effects   PASS         280.00           0.00           inf  **
+                                                        ** test_bridge_deepening.page_boundary_and_two_cycle_error          PASS         510.00           0.02      31874.94  **
+                                                        ** test_bridge_deepening.required_coverage_bins_fail_closed         PASS           0.00           0.00           nan  **
+                                                        ************************************************************************************************************************
+                                                        ** TESTS=5 PASS=5 FAIL=0 SKIP=0                                                14725.00           0.31      47044.73  **
+                                                        ************************************************************************************************************************
+VCD info: dumping is suppressed.

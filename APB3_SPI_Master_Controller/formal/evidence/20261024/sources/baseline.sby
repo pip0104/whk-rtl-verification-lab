@@ -1,0 +1,15 @@
+[options]
+mode bmc
+depth 32
+timeout 120
+[engines]
+smtbmc boolector
+[script]
+read_verilog -formal -sv -D P_TIMING -D BASELINE baseline_apb3_spi_master.sv spi_formal.sv
+prep -top spi_formal
+async2sync
+dffunmap
+[files]
+baseline_apb3_spi_master.sv
+spi_properties.svh
+spi_formal.sv

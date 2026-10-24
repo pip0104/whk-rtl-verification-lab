@@ -1,0 +1,92 @@
+C:\Users\Pip\Documents\������֤\AXI4_AHB5_Lite_Bridge\.venv_cocotb\Lib\site-packages\cocotb_tools\runner.py:100: UserWarning: String 'D:\\�������\\��Ŀ����\\CPU-DV-Portfolio-20261024\\APB3_SPI_Master_Controller\\build\\spi_deepening\\tb_cocotb_spi.fst' contains non-ASCII characters which may not be supported in SystemVerilog
+  warnings.warn(
+     -.--ns INFO     gpi                                ..\gpi\GpiCommon.cpp:242  in gpi_load_users                  Loaded entry library: 'F:\Codex\runtimes\codex-primary-runtime\dependencies\python\python312.dll'
+     -.--ns INFO     gpi                                ..\gpi\GpiCommon.cpp:234  in gpi_load_users                  Running entry func 'initialize' from loaded library 'C:\Users\Pip\Documents\������֤\AXI4_AHB5_Lite_Bridge\.venv_cocotb\Lib\site-packages\cocotb\simulator.cp312-win_amd64.pyd'
+Log message construction failed: (error code) -1
+     -.--ns INFO     gpi                                ..\gpi\GpiCommon.cpp:74   in gpi_print_registered_impl       GPI: VPI support registered
+     0.00ns INFO     cocotb.initialize                  Seeding Python random module with 1792834756
+     0.00ns INFO     cocotb.initialize                  Initialized cocotb v2.1.0 from C:\Users\Pip\Documents\������֤\AXI4_AHB5_Lite_Bridge\.venv_cocotb\Lib\site-packages\cocotb
+     0.00ns INFO     cocotb.initialize                  Running on Icarus Verilog version 14.0 (devel)
+     0.00ns INFO     cocotb.regression                  Running tests
+     0.00ns INFO     cocotb.regression                  running test_spi_deepening.busy_clkdiv_write_keeps_active_frame/mode=0/change=increase (1/24)
+   165.00ns WARNING  py.warnings                        D:\�������\��Ŀ����\CPU-DV-Portfolio-20261024\APB3_SPI_Master_Controller\tests\cocotb\test_apb3_spi.py:98: DeprecationWarning: Use `signal.value_change` instead.
+                                                          await Edge(dut.spi_sclk)
+  1900.00ns INFO     cocotb.regression                  test_spi_deepening.busy_clkdiv_write_keeps_active_frame/mode=0/change=increase passed
+  1900.00ns INFO     cocotb.regression                  running test_spi_deepening.busy_clkdiv_write_keeps_active_frame/mode=0/change=decrease (2/24)
+  3640.00ns INFO     cocotb.regression                  test_spi_deepening.busy_clkdiv_write_keeps_active_frame/mode=0/change=decrease passed
+  3640.00ns INFO     cocotb.regression                  running test_spi_deepening.busy_clkdiv_write_keeps_active_frame/mode=1/change=increase (3/24)
+  5540.00ns INFO     cocotb.regression                  test_spi_deepening.busy_clkdiv_write_keeps_active_frame/mode=1/change=increase passed
+  5540.00ns INFO     cocotb.regression                  running test_spi_deepening.busy_clkdiv_write_keeps_active_frame/mode=1/change=decrease (4/24)
+  7280.00ns INFO     cocotb.regression                  test_spi_deepening.busy_clkdiv_write_keeps_active_frame/mode=1/change=decrease passed
+  7280.00ns INFO     cocotb.regression                  running test_spi_deepening.busy_clkdiv_write_keeps_active_frame/mode=2/change=increase (5/24)
+  9180.00ns INFO     cocotb.regression                  test_spi_deepening.busy_clkdiv_write_keeps_active_frame/mode=2/change=increase passed
+  9180.00ns INFO     cocotb.regression                  running test_spi_deepening.busy_clkdiv_write_keeps_active_frame/mode=2/change=decrease (6/24)
+ 10920.00ns INFO     cocotb.regression                  test_spi_deepening.busy_clkdiv_write_keeps_active_frame/mode=2/change=decrease passed
+ 10920.00ns INFO     cocotb.regression                  running test_spi_deepening.busy_clkdiv_write_keeps_active_frame/mode=3/change=increase (7/24)
+ 12820.00ns INFO     cocotb.regression                  test_spi_deepening.busy_clkdiv_write_keeps_active_frame/mode=3/change=increase passed
+ 12820.00ns INFO     cocotb.regression                  running test_spi_deepening.busy_clkdiv_write_keeps_active_frame/mode=3/change=decrease (8/24)
+ 14560.00ns INFO     cocotb.regression                  test_spi_deepening.busy_clkdiv_write_keeps_active_frame/mode=3/change=decrease passed
+ 14560.00ns INFO     cocotb.regression                  running test_spi_deepening.frame_boundaries_at_divider_zero/mode=0/width=1/lsb=False (9/24)
+ 14800.00ns INFO     cocotb.regression                  test_spi_deepening.frame_boundaries_at_divider_zero/mode=0/width=1/lsb=False passed
+ 14800.00ns INFO     cocotb.regression                  running test_spi_deepening.frame_boundaries_at_divider_zero/mode=0/width=1/lsb=True (10/24)
+ 15040.00ns INFO     cocotb.regression                  test_spi_deepening.frame_boundaries_at_divider_zero/mode=0/width=1/lsb=True passed
+ 15040.00ns INFO     cocotb.regression                  running test_spi_deepening.frame_boundaries_at_divider_zero/mode=0/width=32/lsb=False (11/24)
+ 15900.00ns INFO     cocotb.regression                  test_spi_deepening.frame_boundaries_at_divider_zero/mode=0/width=32/lsb=False passed
+ 15900.00ns INFO     cocotb.regression                  running test_spi_deepening.frame_boundaries_at_divider_zero/mode=0/width=32/lsb=True (12/24)
+ 16760.00ns INFO     cocotb.regression                  test_spi_deepening.frame_boundaries_at_divider_zero/mode=0/width=32/lsb=True passed
+ 16760.00ns INFO     cocotb.regression                  running test_spi_deepening.frame_boundaries_at_divider_zero/mode=1/width=1/lsb=False (13/24)
+ 17000.00ns INFO     cocotb.regression                  test_spi_deepening.frame_boundaries_at_divider_zero/mode=1/width=1/lsb=False passed
+ 17000.00ns INFO     cocotb.regression                  running test_spi_deepening.frame_boundaries_at_divider_zero/mode=1/width=1/lsb=True (14/24)
+ 17240.00ns INFO     cocotb.regression                  test_spi_deepening.frame_boundaries_at_divider_zero/mode=1/width=1/lsb=True passed
+ 17240.00ns INFO     cocotb.regression                  running test_spi_deepening.frame_boundaries_at_divider_zero/mode=1/width=32/lsb=False (15/24)
+ 18100.00ns INFO     cocotb.regression                  test_spi_deepening.frame_boundaries_at_divider_zero/mode=1/width=32/lsb=False passed
+ 18100.00ns INFO     cocotb.regression                  running test_spi_deepening.frame_boundaries_at_divider_zero/mode=1/width=32/lsb=True (16/24)
+ 18960.00ns INFO     cocotb.regression                  test_spi_deepening.frame_boundaries_at_divider_zero/mode=1/width=32/lsb=True passed
+ 18960.00ns INFO     cocotb.regression                  running test_spi_deepening.frame_boundaries_at_divider_zero/mode=2/width=1/lsb=False (17/24)
+ 19200.00ns INFO     cocotb.regression                  test_spi_deepening.frame_boundaries_at_divider_zero/mode=2/width=1/lsb=False passed
+ 19200.00ns INFO     cocotb.regression                  running test_spi_deepening.frame_boundaries_at_divider_zero/mode=2/width=1/lsb=True (18/24)
+ 19440.00ns INFO     cocotb.regression                  test_spi_deepening.frame_boundaries_at_divider_zero/mode=2/width=1/lsb=True passed
+ 19440.00ns INFO     cocotb.regression                  running test_spi_deepening.frame_boundaries_at_divider_zero/mode=2/width=32/lsb=False (19/24)
+ 20300.00ns INFO     cocotb.regression                  test_spi_deepening.frame_boundaries_at_divider_zero/mode=2/width=32/lsb=False passed
+ 20300.00ns INFO     cocotb.regression                  running test_spi_deepening.frame_boundaries_at_divider_zero/mode=2/width=32/lsb=True (20/24)
+ 21160.00ns INFO     cocotb.regression                  test_spi_deepening.frame_boundaries_at_divider_zero/mode=2/width=32/lsb=True passed
+ 21160.00ns INFO     cocotb.regression                  running test_spi_deepening.frame_boundaries_at_divider_zero/mode=3/width=1/lsb=False (21/24)
+ 21400.00ns INFO     cocotb.regression                  test_spi_deepening.frame_boundaries_at_divider_zero/mode=3/width=1/lsb=False passed
+ 21400.00ns INFO     cocotb.regression                  running test_spi_deepening.frame_boundaries_at_divider_zero/mode=3/width=1/lsb=True (22/24)
+ 21640.00ns INFO     cocotb.regression                  test_spi_deepening.frame_boundaries_at_divider_zero/mode=3/width=1/lsb=True passed
+ 21640.00ns INFO     cocotb.regression                  running test_spi_deepening.frame_boundaries_at_divider_zero/mode=3/width=32/lsb=False (23/24)
+ 22500.00ns INFO     cocotb.regression                  test_spi_deepening.frame_boundaries_at_divider_zero/mode=3/width=32/lsb=False passed
+ 22500.00ns INFO     cocotb.regression                  running test_spi_deepening.frame_boundaries_at_divider_zero/mode=3/width=32/lsb=True (24/24)
+ 23360.00ns INFO     cocotb.regression                  test_spi_deepening.frame_boundaries_at_divider_zero/mode=3/width=32/lsb=True passed
+ 23360.00ns INFO     cocotb.regression                  ****************************************************************************************************************************************
+                                                        ** TEST                                                                            STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ****************************************************************************************************************************************
+                                                        ** test_spi_deepening.busy_clkdiv_write_keeps_active_frame/mode=0/change=increase   PASS        1900.00           0.02     118750.00  **
+                                                        ** test_spi_deepening.busy_clkdiv_write_keeps_active_frame/mode=0/change=decrease   PASS        1740.00           0.00           inf  **
+                                                        ** test_spi_deepening.busy_clkdiv_write_keeps_active_frame/mode=1/change=increase   PASS        1900.00           0.00           inf  **
+                                                        ** test_spi_deepening.busy_clkdiv_write_keeps_active_frame/mode=1/change=decrease   PASS        1740.00           0.01     115999.93  **
+                                                        ** test_spi_deepening.busy_clkdiv_write_keeps_active_frame/mode=2/change=increase   PASS        1900.00           0.00           inf  **
+                                                        ** test_spi_deepening.busy_clkdiv_write_keeps_active_frame/mode=2/change=decrease   PASS        1740.00           0.00           inf  **
+                                                        ** test_spi_deepening.busy_clkdiv_write_keeps_active_frame/mode=3/change=increase   PASS        1900.00           0.02     118749.94  **
+                                                        ** test_spi_deepening.busy_clkdiv_write_keeps_active_frame/mode=3/change=decrease   PASS        1740.00           0.00           inf  **
+                                                        ** test_spi_deepening.frame_boundaries_at_divider_zero/mode=0/width=1/lsb=False     PASS         240.00           0.00           inf  **
+                                                        ** test_spi_deepening.frame_boundaries_at_divider_zero/mode=0/width=1/lsb=True      PASS         240.00           0.00           inf  **
+                                                        ** test_spi_deepening.frame_boundaries_at_divider_zero/mode=0/width=32/lsb=False    PASS         860.00           0.00           inf  **
+                                                        ** test_spi_deepening.frame_boundaries_at_divider_zero/mode=0/width=32/lsb=True     PASS         860.00           0.00           inf  **
+                                                        ** test_spi_deepening.frame_boundaries_at_divider_zero/mode=1/width=1/lsb=False     PASS         240.00           0.00           inf  **
+                                                        ** test_spi_deepening.frame_boundaries_at_divider_zero/mode=1/width=1/lsb=True      PASS         240.00           0.02      14999.94  **
+                                                        ** test_spi_deepening.frame_boundaries_at_divider_zero/mode=1/width=32/lsb=False    PASS         860.00           0.00           inf  **
+                                                        ** test_spi_deepening.frame_boundaries_at_divider_zero/mode=1/width=32/lsb=True     PASS         860.00           0.00           inf  **
+                                                        ** test_spi_deepening.frame_boundaries_at_divider_zero/mode=2/width=1/lsb=False     PASS         240.00           0.00           inf  **
+                                                        ** test_spi_deepening.frame_boundaries_at_divider_zero/mode=2/width=1/lsb=True      PASS         240.00           0.00           inf  **
+                                                        ** test_spi_deepening.frame_boundaries_at_divider_zero/mode=2/width=32/lsb=False    PASS         860.00           0.00           inf  **
+                                                        ** test_spi_deepening.frame_boundaries_at_divider_zero/mode=2/width=32/lsb=True     PASS         860.00           0.01      57333.27  **
+                                                        ** test_spi_deepening.frame_boundaries_at_divider_zero/mode=3/width=1/lsb=False     PASS         240.00           0.00           inf  **
+                                                        ** test_spi_deepening.frame_boundaries_at_divider_zero/mode=3/width=1/lsb=True      PASS         240.00           0.00           inf  **
+                                                        ** test_spi_deepening.frame_boundaries_at_divider_zero/mode=3/width=32/lsb=False    PASS         860.00           0.00           inf  **
+                                                        ** test_spi_deepening.frame_boundaries_at_divider_zero/mode=3/width=32/lsb=True     PASS         860.00           0.00           inf  **
+                                                        ****************************************************************************************************************************************
+                                                        ** TESTS=24 PASS=24 FAIL=0 SKIP=0                                                              23360.00           0.12     186880.00  **
+                                                        ****************************************************************************************************************************************
+FST info: dumpfile deepening.fst opened for output.
+DEEPENING: tests=24 failures=0 skipped=0

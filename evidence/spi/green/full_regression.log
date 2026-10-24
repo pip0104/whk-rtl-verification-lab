@@ -1,0 +1,46 @@
+
+===== run_reference_model_tests.ps1 =====
+test_all_modes_have_two_edges_per_bit (test_reference_model.ReferenceModelTests.test_all_modes_have_two_edges_per_bit) ... ok
+test_assemble_lsb_first (test_reference_model.ReferenceModelTests.test_assemble_lsb_first) ... ok
+test_assemble_msb_first (test_reference_model.ReferenceModelTests.test_assemble_msb_first) ... ok
+test_cpha_one_samples_trailing (test_reference_model.ReferenceModelTests.test_cpha_one_samples_trailing) ... ok
+test_cpha_zero_samples_leading (test_reference_model.ReferenceModelTests.test_cpha_zero_samples_leading) ... ok
+test_cpol_returns_to_idle (test_reference_model.ReferenceModelTests.test_cpol_returns_to_idle) ... ok
+test_divider_encoding (test_reference_model.ReferenceModelTests.test_divider_encoding) ... ok
+test_invalid_width_rejected (test_reference_model.ReferenceModelTests.test_invalid_width_rejected) ... ok
+test_lsb_first_wire_order (test_reference_model.ReferenceModelTests.test_lsb_first_wire_order) ... ok
+test_msb_first_wire_order (test_reference_model.ReferenceModelTests.test_msb_first_wire_order) ... ok
+test_non_palindromic_lsb_first_order (test_reference_model.ReferenceModelTests.test_non_palindromic_lsb_first_order) ... ok
+test_transfer_reconstructs_response (test_reference_model.ReferenceModelTests.test_transfer_reconstructs_response) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.001s
+
+OK
+
+===== run_smoke_iverilog.ps1 =====
+VCD info: dumpfile smoke.vcd opened for output.
+SMOKE_TEST_PASS: APB3 SPI modes, bit order, IRQ and CS hold passed
+D:\�������\��Ŀ����\CPU-DV-Portfolio-20261024\APB3_SPI_Master_Controller\tb\tb_top_smoke.sv:275: $finish called at 3085000 (1ps)
+
+===== run_spi_regression.ps1 =====
+     -.--ns INFO     gpi                                ..\gpi\GpiCommon.cpp:242  in gpi_load_users                  Loaded entry library: 'F:\Codex\runtimes\codex-primary-runtime\dependencies\python\python312.dll'
+     -.--ns INFO     gpi                                ..\gpi\GpiCommon.cpp:234  in gpi_load_users                  Running entry func 'initialize' from loaded library 'C:\Users\Pip\Documents\������֤\AXI4_AHB5_Lite_Bridge\.venv_cocotb\Lib\site-packages\cocotb\simulator.cp312-win_amd64.pyd'
+Log message construction failed: (error code) -1
+     -.--ns INFO     gpi                                ..\gpi\GpiCommon.cpp:74   in gpi_print_registered_impl       GPI: VPI support registered
+     0.00ns INFO     cocotb.initialize                  Seeding Python random module with 1792834708
+     0.00ns INFO     cocotb.initialize                  Initialized cocotb v2.1.0 from C:\Users\Pip\Documents\������֤\AXI4_AHB5_Lite_Bridge\.venv_cocotb\Lib\site-packages\cocotb
+     0.00ns INFO     cocotb.initialize                  Running on Icarus Verilog version 14.0 (devel)
+     0.00ns INFO     cocotb.regression                  Running tests
+     0.00ns INFO     cocotb.regression                  running test_apb3_spi.full_protocol_regression (1/1)
+   145.00ns WARNING  py.warnings                        D:\�������\��Ŀ����\CPU-DV-Portfolio-20261024\APB3_SPI_Master_Controller\tests\cocotb\test_apb3_spi.py:98: DeprecationWarning: Use `signal.value_change` instead.
+                                                          await Edge(dut.spi_sclk)
+  8070.00ns INFO     cocotb.tb_cocotb_spi               Functional coverage: 23/23 bins
+  8070.00ns INFO     cocotb.regression                  test_apb3_spi.full_protocol_regression passed
+  8070.00ns INFO     cocotb.regression                  ************************************************************************************************
+                                                        ** TEST                                    STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ************************************************************************************************
+                                                        ** test_apb3_spi.full_protocol_regression   PASS        8070.00           0.02     504375.00  **
+                                                        ************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                         8070.00           0.06     128095.24  **
+                                                        ************************************************************************************************

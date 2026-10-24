@@ -1,0 +1,66 @@
+{
+  "format": "portable functional coverage v1",
+  "note": "This is transaction-level functional coverage from the cocotb regression, not a commercial simulator code/covergroup report.",
+  "total_samples": 644,
+  "required_bins": 36,
+  "covered_required_bins": 36,
+  "missing_required_bins": [],
+  "coverpoints": {
+    "direction": {
+      "READ": 30,
+      "WRITE": 45
+    },
+    "burst": {
+      "FIXED": 5,
+      "INCR": 52,
+      "RESERVED": 1,
+      "WRAP": 14
+    },
+    "size_bytes": {
+      "1": 10,
+      "2": 10,
+      "4": 51
+    },
+    "beats": {
+      "1": 40,
+      "16": 4,
+      "2": 11,
+      "4": 12,
+      "8": 4
+    },
+    "address_lane": {
+      "0": 59,
+      "1": 2,
+      "2": 6,
+      "3": 4
+    },
+    "response": {
+      "DECERR": 6,
+      "OKAY": 66,
+      "SLVERR": 3
+    },
+    "ahb_wait": {
+      "0": 195,
+      "1": 1,
+      "2_3": 1,
+      "4_plus": 1
+    },
+    "error_beat": {
+      "first": 1,
+      "last": 1,
+      "middle": 1
+    },
+    "reset_point": {
+      "ahb_wait": 1,
+      "aw_captured": 1,
+      "b_stall": 1,
+      "idle": 1,
+      "r_stall": 1,
+      "w_captured": 1
+    },
+    "fifo_stress": {
+      "full_backpressure": 1,
+      "recovery": 1
+    }
+  }
+}

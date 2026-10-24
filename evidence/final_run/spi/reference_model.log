@@ -1,0 +1,18 @@
+COMMAND: ["C:\\Users\\Pip\\Documents\\总线验证\\AXI4_AHB5_Lite_Bridge\\.venv_cocotb\\Scripts\\python.exe", "-m", "unittest", "discover", "-s", "tools", "-p", "test_*.py", "-v"]
+test_all_modes_have_two_edges_per_bit (test_reference_model.ReferenceModelTests.test_all_modes_have_two_edges_per_bit) ... ok
+test_assemble_lsb_first (test_reference_model.ReferenceModelTests.test_assemble_lsb_first) ... ok
+test_assemble_msb_first (test_reference_model.ReferenceModelTests.test_assemble_msb_first) ... ok
+test_cpha_one_samples_trailing (test_reference_model.ReferenceModelTests.test_cpha_one_samples_trailing) ... ok
+test_cpha_zero_samples_leading (test_reference_model.ReferenceModelTests.test_cpha_zero_samples_leading) ... ok
+test_cpol_returns_to_idle (test_reference_model.ReferenceModelTests.test_cpol_returns_to_idle) ... ok
+test_divider_encoding (test_reference_model.ReferenceModelTests.test_divider_encoding) ... ok
+test_invalid_width_rejected (test_reference_model.ReferenceModelTests.test_invalid_width_rejected) ... ok
+test_lsb_first_wire_order (test_reference_model.ReferenceModelTests.test_lsb_first_wire_order) ... ok
+test_msb_first_wire_order (test_reference_model.ReferenceModelTests.test_msb_first_wire_order) ... ok
+test_non_palindromic_lsb_first_order (test_reference_model.ReferenceModelTests.test_non_palindromic_lsb_first_order) ... ok
+test_transfer_reconstructs_response (test_reference_model.ReferenceModelTests.test_transfer_reconstructs_response) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.001s
+
+OK

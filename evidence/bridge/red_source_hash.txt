@@ -1,0 +1,5 @@
+
+Algorithm : SHA256
+Hash      : F7742F1D162388719E8C00F37619F2CB28E66BF7259F657EB9BFEEE2C0AA9EE1
+Path      : D:\秋招相关\项目深挖\CPU-DV-Portfolio-20261024\AXI4_AHB5_Lite_Bridge\rtl\axi4_ahb5_lite_bridge.sv
+

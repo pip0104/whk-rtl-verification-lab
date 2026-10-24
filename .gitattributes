@@ -1,0 +1,11 @@
+* text=auto
+*.py text eol=lf
+*.sv text eol=lf
+*.svh text eol=lf
+*.sby text eol=lf
+*.sh text eol=lf
+*.md text eol=lf
+# Preserve proof inputs and frozen evidence byte-for-byte for recorded SHA256.
+APB3_SPI_Master_Controller/formal/** -text whitespace=cr-at-eol
+APB3_SPI_Master_Controller/formal/evidence/** -text -whitespace
+evidence/** -text -whitespace

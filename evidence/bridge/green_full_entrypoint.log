@@ -1,0 +1,168 @@
+
+===== run_reference_model_tests.ps1 =====
+test_byte_lane_masks (__main__.AddressModelTest.test_byte_lane_masks) ... ok
+test_fixed_at_page_end_is_not_increment (__main__.AddressModelTest.test_fixed_at_page_end_is_not_increment) ... ok
+test_fixed_burst_never_exceeds_16 (__main__.AddressModelTest.test_fixed_burst_never_exceeds_16) ... ok
+test_fixed_keeps_address (__main__.AddressModelTest.test_fixed_keeps_address) ... ok
+test_increment_by_transfer_size (__main__.AddressModelTest.test_increment_by_transfer_size) ... ok
+test_mask_validator (__main__.AddressModelTest.test_mask_validator) ... ok
+test_reject_address_overflow (__main__.AddressModelTest.test_reject_address_overflow) ... ok
+test_reject_bad_wrap_length (__main__.AddressModelTest.test_reject_bad_wrap_length) ... ok
+test_reject_burst_larger_than_configuration (__main__.AddressModelTest.test_reject_burst_larger_than_configuration) ... ok
+test_reject_increment_crossing_4kb (__main__.AddressModelTest.test_reject_increment_crossing_4kb) ... ok
+test_reject_reserved_burst (__main__.AddressModelTest.test_reject_reserved_burst) ... ok
+test_reject_unaligned (__main__.AddressModelTest.test_reject_unaligned) ... ok
+test_single_beat_incr (__main__.AddressModelTest.test_single_beat_incr) ... ok
+test_wrap_at_page_end_stays_in_wrap_block (__main__.AddressModelTest.test_wrap_at_page_end_stays_in_wrap_block) ... ok
+test_wrap_four_words (__main__.AddressModelTest.test_wrap_four_words) ... ok
+test_wrap_uses_current_address_after_first_wrap (__main__.AddressModelTest.test_wrap_uses_current_address_after_first_wrap) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.001s
+
+OK
+
+===== run_smoke_iverilog.ps1 =====
+warning: Some design elements have no explicit time unit and/or
+       : time precision. This may cause confusing timing results.
+       : Affected design elements are:
+       :   -- package axi4_ahb5_lite_bridge_pkg declared here: D:\�������\��Ŀ����\CPU-DV-Portfolio-20261024\AXI4_AHB5_Lite_Bridge\rtl\axi4_ahb5_lite_bridge_pkg.sv:4
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'cmd_head[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'cmd_head[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'cmd_head[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'cmd_head[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'wdata_head[36:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'wdata_head[36:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'active_cmd_q[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'active_cmd_q[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'active_cmd_q[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'active_cmd_q[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'active_cmd_q[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'wdata_head[36:0]').
+VCD info: dumpfile smoke.vcd opened for output.
+SMOKE_TEST_PASS: single full-width and narrow transfers passed
+D:\�������\��Ŀ����\CPU-DV-Portfolio-20261024\AXI4_AHB5_Lite_Bridge\tb\tb_top_smoke.sv:203: $finish called at 385000 (1ps)
+PASS: Icarus smoke test completed.
+Waveform: D:\秋招相关\项目深挖\CPU-DV-Portfolio-20261024\AXI4_AHB5_Lite_Bridge\build\iverilog_smoke\smoke.vcd
+
+===== run_parameter_sweep_iverilog.ps1 =====
+warning: Some design elements have no explicit time unit and/or
+       : time precision. This may cause confusing timing results.
+       : Affected design elements are:
+       :   -- package axi4_ahb5_lite_bridge_pkg declared here: D:\�������\��Ŀ����\CPU-DV-Portfolio-20261024\AXI4_AHB5_Lite_Bridge\rtl\axi4_ahb5_lite_bridge_pkg.sv:4
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'cmd_head[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'cmd_head[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'cmd_head[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'cmd_head[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'wdata_head[36:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'wdata_head[36:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'active_cmd_q[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'active_cmd_q[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'active_cmd_q[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'active_cmd_q[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'active_cmd_q[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'wdata_head[36:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'cmd_head[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'cmd_head[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'cmd_head[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'cmd_head[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'wdata_head[36:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'wdata_head[36:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'active_cmd_q[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'active_cmd_q[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'active_cmd_q[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'active_cmd_q[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'active_cmd_q[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'wdata_head[36:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'cmd_head[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'cmd_head[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'cmd_head[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'cmd_head[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'wdata_head[36:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'wdata_head[36:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'active_cmd_q[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'active_cmd_q[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'active_cmd_q[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'active_cmd_q[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'active_cmd_q[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'wdata_head[36:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'cmd_head[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'cmd_head[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'cmd_head[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'cmd_head[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'wdata_head[36:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'wdata_head[36:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'active_cmd_q[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'active_cmd_q[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'active_cmd_q[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'active_cmd_q[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'active_cmd_q[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'wdata_head[36:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'cmd_head[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'cmd_head[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'cmd_head[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'cmd_head[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'wdata_head[36:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'wdata_head[36:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'active_cmd_q[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'active_cmd_q[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'active_cmd_q[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'active_cmd_q[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'active_cmd_q[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'wdata_head[36:0]').
+PARAMETER_SWEEP_PASS: FIFO_DEPTH=8/16/32/64/128 elaborated
+D:\�������\��Ŀ����\CPU-DV-Portfolio-20261024\AXI4_AHB5_Lite_Bridge\tb\tb_parameter_sweep.sv:58: $finish called at 1000 (1ps)
+PASS: all advertised FIFO depths elaborated.
+
+===== run_bridge_regression.ps1 =====
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'cmd_head[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'cmd_head[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'cmd_head[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'cmd_head[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'wdata_head[36:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'wdata_head[36:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'active_cmd_q[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'active_cmd_q[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'active_cmd_q[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'active_cmd_q[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'active_cmd_q[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'wdata_head[36:0]').
+     -.--ns INFO     gpi                                ..\gpi\GpiCommon.cpp:242  in gpi_load_users                  Loaded entry library: 'F:\Codex\runtimes\codex-primary-runtime\dependencies\python\python312.dll'
+     -.--ns INFO     gpi                                ..\gpi\GpiCommon.cpp:234  in gpi_load_users                  Running entry func 'initialize' from loaded library 'C:\Users\Pip\Documents\������֤\AXI4_AHB5_Lite_Bridge\.venv_cocotb\Lib\site-packages\cocotb\simulator.cp312-win_amd64.pyd'
+Log message construction failed: (error code) -1
+     -.--ns INFO     gpi                                ..\gpi\GpiCommon.cpp:74   in gpi_print_registered_impl       GPI: VPI support registered
+     0.00ns INFO     cocotb.initialize                  Seeding Python random module with 1792834921
+     0.00ns INFO     cocotb.initialize                  Initialized cocotb v2.1.0 from C:\Users\Pip\Documents\������֤\AXI4_AHB5_Lite_Bridge\.venv_cocotb\Lib\site-packages\cocotb
+     0.00ns INFO     cocotb.initialize                  Running on Icarus Verilog version 14.0 (devel)
+     0.00ns INFO     cocotb.regression                  Running tests
+     0.00ns INFO     cocotb.regression                  running test_bridge_regression.full_protocol_regression (1/5)
+                                                            Run directed, error, stress, reset and seed-stable random scenarios.
+ 13725.00ns INFO     test                               Functional regression complete: 644 transaction-level coverage samples
+ 13725.00ns INFO     cocotb.regression                  test_bridge_regression.full_protocol_regression passed
+ 13725.00ns INFO     cocotb.regression                  running test_bridge_deepening.separate_address_and_data_phase (2/5)
+                                                            Early HRDATA sampling returns poison instead of the addressed word.
+ 13935.00ns INFO     cocotb.regression                  test_bridge_deepening.separate_address_and_data_phase passed
+ 13935.00ns INFO     cocotb.regression                  running test_bridge_deepening.late_illegal_write_has_zero_side_effects (3/5)
+                                                            A bad second strobe/late WLAST must be found before the first AHB write.
+ 14215.00ns INFO     cocotb.regression                  test_bridge_deepening.late_illegal_write_has_zero_side_effects passed
+ 14215.00ns INFO     cocotb.regression                  running test_bridge_deepening.page_boundary_and_two_cycle_error (4/5)
+                                                            Reject INCR crossing 4KB; permit FIXED/WRAP ending inside that page.
+ 14725.00ns INFO     cocotb.regression                  test_bridge_deepening.page_boundary_and_two_cycle_error passed
+ 14725.00ns INFO     cocotb.regression                  running test_bridge_deepening.required_coverage_bins_fail_closed (5/5)
+                                                            Empty/partial coverage must fail even when the simulator ran normally.
+ 14725.00ns INFO     cocotb.regression                  test_bridge_deepening.required_coverage_bins_fail_closed passed
+ 14725.00ns INFO     cocotb.regression                  ************************************************************************************************************************
+                                                        ** TEST                                                            STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ************************************************************************************************************************
+                                                        ** test_bridge_regression.full_protocol_regression                  PASS       13725.00           0.24      58404.26  **
+                                                        ** test_bridge_deepening.separate_address_and_data_phase            PASS         210.00           0.00           inf  **
+                                                        ** test_bridge_deepening.late_illegal_write_has_zero_side_effects   PASS         280.00           0.00           inf  **
+                                                        ** test_bridge_deepening.page_boundary_and_two_cycle_error          PASS         510.00           0.01      33999.93  **
+                                                        ** test_bridge_deepening.required_coverage_bins_fail_closed         PASS           0.00           0.00           nan  **
+                                                        ************************************************************************************************************************
+                                                        ** TESTS=5 PASS=5 FAIL=0 SKIP=0                                                14725.00           0.30      49579.13  **
+                                                        ************************************************************************************************************************
+VCD info: dumping is suppressed.
+PASS: AXI4-to-AHB5-Lite portable regression completed.
+Functional coverage: D:\秋招相关\项目深挖\CPU-DV-Portfolio-20261024\AXI4_AHB5_Lite_Bridge\results\functional_coverage.json
+PASS: full portable regression completed. Log: D:\秋招相关\项目深挖\CPU-DV-Portfolio-20261024\AXI4_AHB5_Lite_Bridge\results\full_regression.log

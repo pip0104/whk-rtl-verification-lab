@@ -1,0 +1,49 @@
+{
+  "required_bins": 23,
+  "hit_bins": 23,
+  "coverage_percent": 100.0,
+  "bins": {
+    "modes": [
+      "00",
+      "01",
+      "10",
+      "11"
+    ],
+    "bit_orders": [
+      "lsb",
+      "msb"
+    ],
+    "widths": [
+      8,
+      16
+    ],
+    "dividers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "continuous": [
+      "cs_hold",
+      "explicit_next_frame",
+      "final_release"
+    ],
+    "interrupt_paths": [
+      "done",
+      "mask",
+      "rx_avail",
+      "w1c"
+    ],
+    "overrun_paths": [
+      "rx_unread",
+      "tx_double_write"
+    ],
+    "abort_paths": [
+      "disable_while_busy"
+    ],
+    "apb_errors": [
+      "invalid_register"
+    ]
+  },
+  "scope": "transaction-level cocotb functional coverage; not SV covergroup coverage"
+}

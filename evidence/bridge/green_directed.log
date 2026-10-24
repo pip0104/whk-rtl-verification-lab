@@ -1,0 +1,39 @@
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'cmd_head[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'cmd_head[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'cmd_head[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'cmd_head[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'wdata_head[36:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'wdata_head[36:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'active_cmd_q[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'active_cmd_q[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'active_cmd_q[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'active_cmd_q[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'active_cmd_q[50:0]').
+:0: sorry: constant selects in always_* processes are not fully supported (the process will be sensitive to all bits in 'wdata_head[36:0]').
+     -.--ns INFO     gpi                                ..\gpi\GpiCommon.cpp:242  in gpi_load_users                  Loaded entry library: 'F:\Codex\runtimes\codex-primary-runtime\dependencies\python\python312.dll'
+Log message construction failed: (error code) -1
+     -.--ns INFO     gpi                                ..\gpi\GpiCommon.cpp:234  in gpi_load_users                  Running entry func 'initialize' from loaded library 'C:\Users\Pip\Documents\������֤\AXI4_AHB5_Lite_Bridge\.venv_cocotb\Lib\site-packages\cocotb\simulator.cp312-win_amd64.pyd'
+     -.--ns INFO     gpi                                ..\gpi\GpiCommon.cpp:74   in gpi_print_registered_impl       GPI: VPI support registered
+     0.00ns INFO     cocotb.initialize                  Seeding Python random module with 1792834740
+     0.00ns INFO     cocotb.initialize                  Initialized cocotb v2.1.0 from C:\Users\Pip\Documents\������֤\AXI4_AHB5_Lite_Bridge\.venv_cocotb\Lib\site-packages\cocotb
+     0.00ns INFO     cocotb.initialize                  Running on Icarus Verilog version 14.0 (devel)
+     0.00ns INFO     cocotb.regression                  Running tests
+     0.00ns INFO     cocotb.regression                  running test_bridge_deepening.separate_address_and_data_phase (1/3)
+                                                            Early HRDATA sampling returns poison instead of the addressed word.
+   205.00ns INFO     cocotb.regression                  test_bridge_deepening.separate_address_and_data_phase passed
+   205.00ns INFO     cocotb.regression                  running test_bridge_deepening.late_illegal_write_has_zero_side_effects (2/3)
+                                                            A bad second strobe/late WLAST must be found before the first AHB write.
+   485.00ns INFO     cocotb.regression                  test_bridge_deepening.late_illegal_write_has_zero_side_effects passed
+   485.00ns INFO     cocotb.regression                  running test_bridge_deepening.page_boundary_and_two_cycle_error (3/3)
+                                                            Reject INCR crossing 4KB; permit FIXED/WRAP ending inside that page.
+   995.00ns INFO     cocotb.regression                  test_bridge_deepening.page_boundary_and_two_cycle_error passed
+   995.00ns INFO     cocotb.regression                  ************************************************************************************************************************
+                                                        ** TEST                                                            STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ************************************************************************************************************************
+                                                        ** test_bridge_deepening.separate_address_and_data_phase            PASS         205.00           0.00           inf  **
+                                                        ** test_bridge_deepening.late_illegal_write_has_zero_side_effects   PASS         280.00           0.00           inf  **
+                                                        ** test_bridge_deepening.page_boundary_and_two_cycle_error          PASS         510.00           0.01      33999.93  **
+                                                        ************************************************************************************************************************
+                                                        ** TESTS=3 PASS=3 FAIL=0 SKIP=0                                                  995.00           0.06      16048.40  **
+                                                        ************************************************************************************************************************
+VCD info: dumping is suppressed.

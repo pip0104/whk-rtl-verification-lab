@@ -1,0 +1,11 @@
+**/build/
+**/__pycache__/
+**/sim_build/
+**/.venv*/
+**/tests/cocotb/*.xml
+**/results/
+**/formal/*_prove/
+**/formal/*_cover/
+*.vcd
+*.fst
+.superpowers/

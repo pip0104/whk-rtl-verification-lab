@@ -1,0 +1,50 @@
+{
+  "source_sha256": {
+    "tools\\reference_model.py": "ACBE732EBC92CB6F35B1D5A4C9A0DFD71787835A914B6B89ED03A767F562C55C",
+    "tb\\ahb5_lite_memory_model.sv": "8B85E77FB6880EE707318A03173EDCEF9C066B7FA39FAA8101E5C95F9918090E",
+    "tools\\test_reference_model.py": "B5D9344811D13274DFF26206E5B727575584DA035517E24D3031F674117BA592",
+    "tests\\cocotb\\bridge_bfm.py": "AAB407FCC011D8A53EF11B1B0AD184A97BB13B1DECFD085F0FEACE279CB05EA0",
+    "rtl\\axi4_ahb5_lite_bridge.sv": "721248B6C2B17AFD2C4A5E53A1172D90FE38409BF2273678B57931D66860AF9B",
+    "tests\\cocotb\\test_bridge_regression.py": "E63D349C0514461E3A537403F89E96B2414492800E61EA9108861FD997B5C7C8",
+    "tests\\cocotb\\test_bridge_deepening.py": "C9417A3129EFE7D17B2FF6F8F5D8739791E420D88885183189C2C78ADAC89D0F"
+  },
+  "captured_at": "2026-10-24T17:42:25.7879407+08:00",
+  "tools": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "cocotb": "2.1.0"
+  },
+  "commands": [
+    ". F:\\EDA\\oss-cad-suite\\environment.ps1",
+    "scripts\\run_full_regression.ps1 -PythonExe C:\\Users\\Pip\\Documents\\总线验证\\AXI4_AHB5_Lite_Bridge\\.venv_cocotb\\Scripts\\python.exe",
+    "scripts\\run_cocotb_environment_probe.ps1 -PythonExe <same python>"
+  ],
+  "baseline_git_commit": "64a7ed6114ef7a479e88319fa7207e1f09b20e0e",
+  "green": {
+    "protocol_failures": 0,
+    "parameter_elaboration": [
+      8,
+      16,
+      32,
+      64,
+      128
+    ],
+    "required_bins": 36,
+    "covered_bins": 36,
+    "probe": "PASS",
+    "reference_failures": 0,
+    "protocol_tests": 5,
+    "smoke": "PASS",
+    "main_xml_unchanged_by_probe": true,
+    "combined_protocol_sim_ns": 14725,
+    "main_protocol_sim_ns": 13725,
+    "total_coverpoint_hits": 644,
+    "reference_tests": 16
+  },
+  "iverilog": "Icarus Verilog version 14.0 (devel) (s20260301-328-geda9fdcd1-dirty)",
+  "red": {
+    "reference_failures": 3,
+    "protocol_tests": 3,
+    "reference_tests": 16,
+    "protocol_failures": 3
+  }
+}

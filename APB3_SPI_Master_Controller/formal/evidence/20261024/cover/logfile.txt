@@ -1,0 +1,54 @@
+SBY 17:49:51 [..\results\formal\20261024T094901982316Z\cover] Removing directory 'D:\秋招相关\项目深挖\CPU-DV-Portfolio-20261024\APB3_SPI_Master_Controller\results\formal\20261024T094901982316Z\cover'.
+SBY 17:49:51 [..\results\formal\20261024T094901982316Z\cover] Copy 'D:\秋招相关\项目深挖\CPU-DV-Portfolio-20261024\APB3_SPI_Master_Controller\formal\..\rtl\apb3_spi_master.sv' to 'D:\秋招相关\项目深挖\CPU-DV-Portfolio-20261024\APB3_SPI_Master_Controller\formal\..\results\formal\20261024T094901982316Z\cover\src\apb3_spi_master.sv'.
+SBY 17:49:51 [..\results\formal\20261024T094901982316Z\cover] Copy 'D:\秋招相关\项目深挖\CPU-DV-Portfolio-20261024\APB3_SPI_Master_Controller\formal\spi_properties.svh' to 'D:\秋招相关\项目深挖\CPU-DV-Portfolio-20261024\APB3_SPI_Master_Controller\formal\..\results\formal\20261024T094901982316Z\cover\src\spi_properties.svh'.
+SBY 17:49:51 [..\results\formal\20261024T094901982316Z\cover] Copy 'D:\秋招相关\项目深挖\CPU-DV-Portfolio-20261024\APB3_SPI_Master_Controller\formal\spi_formal.sv' to 'D:\秋招相关\项目深挖\CPU-DV-Portfolio-20261024\APB3_SPI_Master_Controller\formal\..\results\formal\20261024T094901982316Z\cover\src\spi_formal.sv'.
+SBY 17:49:52 [..\results\formal\20261024T094901982316Z\cover] engine_0: smtbmc boolector
+SBY 17:49:52 [..\results\formal\20261024T094901982316Z\cover] base: starting process "cd ..\results\formal\20261024T094901982316Z\cover/src& yosys -ql ../model/design.log ../model/design.ys"
+SBY 17:49:52 [..\results\formal\20261024T094901982316Z\cover] base: Warning: Wire spi_formal.\pclk is used but has no driver.
+SBY 17:49:52 [..\results\formal\20261024T094901982316Z\cover] base: finished (returncode=0)
+SBY 17:49:52 [..\results\formal\20261024T094901982316Z\cover] prep: starting process "cd ..\results\formal\20261024T094901982316Z\cover/model& yosys -ql design_prep.log design_prep.ys"
+SBY 17:49:52 [..\results\formal\20261024T094901982316Z\cover] prep: Warning: Wire spi_formal.\pclk is used but has no driver.
+SBY 17:49:52 [..\results\formal\20261024T094901982316Z\cover] prep: finished (returncode=0)
+SBY 17:49:52 [..\results\formal\20261024T094901982316Z\cover] smt2: starting process "cd ..\results\formal\20261024T094901982316Z\cover/model& yosys -ql design_smt2.log design_smt2.ys"
+SBY 17:49:53 [..\results\formal\20261024T094901982316Z\cover] smt2: finished (returncode=0)
+SBY 17:49:53 [..\results\formal\20261024T094901982316Z\cover] engine_0: starting process "cd ..\results\formal\20261024T094901982316Z\cover& yosys-smtbmc -s boolector --presat --unroll -c --noprogress -t 40  --append 0 --dump-vcd engine_0/trace%.vcd --dump-yw engine_0/trace%.yw --dump-vlogtb engine_0/trace%_tb.v --dump-smtc engine_0/trace%.smtc model/design_smt2.smt2"
+SBY 17:49:53 [..\results\formal\20261024T094901982316Z\cover] engine_0: ##   0:00:00  Solver: boolector
+SBY 17:49:53 [..\results\formal\20261024T094901982316Z\cover] engine_0: ##   0:00:00  Checking cover reachability in step 0..
+SBY 17:49:53 [..\results\formal\20261024T094901982316Z\cover] engine_0: ##   0:00:00  Checking cover reachability in step 1..
+SBY 17:49:53 [..\results\formal\20261024T094901982316Z\cover] engine_0: ##   0:00:00  Checking cover reachability in step 2..
+SBY 17:49:53 [..\results\formal\20261024T094901982316Z\cover] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 17:49:53 [..\results\formal\20261024T094901982316Z\cover] engine_0: ##   0:00:00  Checking cover reachability in step 4..
+SBY 17:49:53 [..\results\formal\20261024T094901982316Z\cover] engine_0: ##   0:00:00  Checking cover reachability in step 5..
+SBY 17:49:53 [..\results\formal\20261024T094901982316Z\cover] engine_0: ##   0:00:00  Checking cover reachability in step 6..
+SBY 17:49:53 [..\results\formal\20261024T094901982316Z\cover] engine_0: ##   0:00:00  Reached cover statement in step 6 at spi_formal.dut: cover_start
+SBY 17:49:53 [..\results\formal\20261024T094901982316Z\cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace0.vcd
+SBY 17:49:53 [..\results\formal\20261024T094901982316Z\cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace0_tb.v
+SBY 17:49:53 [..\results\formal\20261024T094901982316Z\cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace0.smtc
+SBY 17:49:53 [..\results\formal\20261024T094901982316Z\cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace0.yw
+SBY 17:49:53 [..\results\formal\20261024T094901982316Z\cover] engine_0: ##   0:00:00  Checking cover reachability in step 6..
+SBY 17:49:53 [..\results\formal\20261024T094901982316Z\cover] engine_0: ##   0:00:00  Checking cover reachability in step 7..
+SBY 17:49:53 [..\results\formal\20261024T094901982316Z\cover] engine_0: ##   0:00:00  Checking cover reachability in step 8..
+SBY 17:49:53 [..\results\formal\20261024T094901982316Z\cover] engine_0: ##   0:00:00  Reached cover statement in step 8 at spi_formal.dut: cover_busy_reprogram
+SBY 17:49:53 [..\results\formal\20261024T094901982316Z\cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace1.vcd
+SBY 17:49:53 [..\results\formal\20261024T094901982316Z\cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace1_tb.v
+SBY 17:49:53 [..\results\formal\20261024T094901982316Z\cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace1.smtc
+SBY 17:49:53 [..\results\formal\20261024T094901982316Z\cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace1.yw
+SBY 17:49:53 [..\results\formal\20261024T094901982316Z\cover] engine_0: ##   0:00:00  Checking cover reachability in step 8..
+SBY 17:49:53 [..\results\formal\20261024T094901982316Z\cover] engine_0: ##   0:00:00  Reached cover statement in step 8 at spi_formal.dut: cover_finish_after_reprogram
+SBY 17:49:53 [..\results\formal\20261024T094901982316Z\cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace2.vcd
+SBY 17:49:53 [..\results\formal\20261024T094901982316Z\cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace2_tb.v
+SBY 17:49:53 [..\results\formal\20261024T094901982316Z\cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace2.smtc
+SBY 17:49:53 [..\results\formal\20261024T094901982316Z\cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace2.yw
+SBY 17:49:53 [..\results\formal\20261024T094901982316Z\cover] engine_0: ##   0:00:00  Status: passed
+SBY 17:49:53 [..\results\formal\20261024T094901982316Z\cover] engine_0: finished (returncode=0)
+SBY 17:49:53 [..\results\formal\20261024T094901982316Z\cover] engine_0: Status returned by engine: pass
+SBY 17:49:53 [..\results\formal\20261024T094901982316Z\cover] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:01 (1)
+SBY 17:49:53 [..\results\formal\20261024T094901982316Z\cover] summary: Elapsed process time unvailable on Windows
+SBY 17:49:53 [..\results\formal\20261024T094901982316Z\cover] summary: engine_0 (smtbmc boolector) returned pass
+SBY 17:49:53 [..\results\formal\20261024T094901982316Z\cover] summary: cover trace: ..\results\formal\20261024T094901982316Z\cover\engine_0\trace0.vcd
+SBY 17:49:53 [..\results\formal\20261024T094901982316Z\cover] summary:   reached cover statement spi_formal.dut.cover_start at spi_properties.svh:71.7-71.49 step 6
+SBY 17:49:53 [..\results\formal\20261024T094901982316Z\cover] summary: cover trace: ..\results\formal\20261024T094901982316Z\cover\engine_0\trace1.vcd
+SBY 17:49:53 [..\results\formal\20261024T094901982316Z\cover] summary:   reached cover statement spi_formal.dut.cover_busy_reprogram at spi_properties.svh:72.7-72.61 step 8
+SBY 17:49:53 [..\results\formal\20261024T094901982316Z\cover] summary: cover trace: ..\results\formal\20261024T094901982316Z\cover\engine_0\trace2.vcd
+SBY 17:49:53 [..\results\formal\20261024T094901982316Z\cover] summary:   reached cover statement spi_formal.dut.cover_finish_after_reprogram at spi_properties.svh:73.7-75.74 step 8
+SBY 17:49:53 [..\results\formal\20261024T094901982316Z\cover] DONE (PASS, rc=0)

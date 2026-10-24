@@ -1,0 +1,158 @@
+{
+  "utc": "20261024T094901982316Z",
+  "configuration": {
+    "ADDR_WIDTH": 32,
+    "DATA_WIDTH": 32
+  },
+  "scope": "scoped safety properties, not complete SPI correctness or liveness",
+  "sources": {
+    "rtl\\apb3_spi_master.sv": "65c6d4c608c4c92643b61fd2cab62a4b4f1c74e2f5e7ca7dd550ca1fce53b2b4",
+    "formal\\spi_formal.sv": "2cfbcb63ca5d76ec9b1ff23b5704fcdb0233a11b08fb88c909d9e0f72995c970",
+    "formal\\spi_properties.svh": "6c3d681eade2b7d9ed0438cafc12462cc1aff40969948db5143698ed4d674d1c",
+    "formal\\spi.sby": "fbdc18f8bbe31c9ef7e0f5daee02e1219dd208104d4917b5df200cdf66a39270",
+    "formal\\baseline.sby": "a826259c5a2de56e7334f146bfb8d1c57934ba439fe5bdaceaae59980a0a7df4",
+    "formal\\baseline_apb3_spi_master.sv": "190e7d7d6ab2f21408a76a6528fe50440385fc045bf5d95584e1ef9b7045a7d6",
+    "formal\\run_formal.py": "c4e74ce16227a0afc6c255ccde02e3639f362152b659a02bbb8bc3370244bebd"
+  },
+  "tools": {
+    "yosys": "Yosys 0.67+94 (git sha1 7defa5186-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 13.2.1)",
+    "sby": "SBY v0.67-4-gfea6e46",
+    "boolector": "3.2.4"
+  },
+  "tasks": [
+    {
+      "name": "baseline",
+      "mode": "bmc",
+      "expected": "FAIL",
+      "status": "FAIL",
+      "returncode": 2,
+      "elapsed_seconds": 2.109,
+      "checked": true,
+      "command": [
+        "F:\\EDA\\oss-cad-suite\\bin\\sby.EXE",
+        "-f",
+        "-d",
+        "..\\results\\formal\\20261024T094901982316Z\\baseline",
+        "baseline.sby"
+      ],
+      "cwd": "D:\\\u79cb\u62db\u76f8\u5173\\\u9879\u76ee\u6df1\u6316\\CPU-DV-Portfolio-20261024\\APB3_SPI_Master_Controller\\formal",
+      "cover_reached": []
+    },
+    {
+      "name": "reset",
+      "mode": "prove",
+      "expected": "PASS",
+      "status": "PASS",
+      "returncode": 0,
+      "elapsed_seconds": 11.406,
+      "checked": true,
+      "command": [
+        "F:\\EDA\\oss-cad-suite\\bin\\sby.EXE",
+        "-f",
+        "-d",
+        "..\\results\\formal\\20261024T094901982316Z\\reset",
+        "spi.sby",
+        "reset"
+      ],
+      "cwd": "D:\\\u79cb\u62db\u76f8\u5173\\\u9879\u76ee\u6df1\u6316\\CPU-DV-Portfolio-20261024\\APB3_SPI_Master_Controller\\formal",
+      "cover_reached": []
+    },
+    {
+      "name": "config",
+      "mode": "prove",
+      "expected": "PASS",
+      "status": "PASS",
+      "returncode": 0,
+      "elapsed_seconds": 7.203,
+      "checked": true,
+      "command": [
+        "F:\\EDA\\oss-cad-suite\\bin\\sby.EXE",
+        "-f",
+        "-d",
+        "..\\results\\formal\\20261024T094901982316Z\\config",
+        "spi.sby",
+        "config"
+      ],
+      "cwd": "D:\\\u79cb\u62db\u76f8\u5173\\\u9879\u76ee\u6df1\u6316\\CPU-DV-Portfolio-20261024\\APB3_SPI_Master_Controller\\formal",
+      "cover_reached": []
+    },
+    {
+      "name": "timing",
+      "mode": "prove",
+      "expected": "PASS",
+      "status": "PASS",
+      "returncode": 0,
+      "elapsed_seconds": 15.75,
+      "checked": true,
+      "command": [
+        "F:\\EDA\\oss-cad-suite\\bin\\sby.EXE",
+        "-f",
+        "-d",
+        "..\\results\\formal\\20261024T094901982316Z\\timing",
+        "spi.sby",
+        "timing"
+      ],
+      "cwd": "D:\\\u79cb\u62db\u76f8\u5173\\\u9879\u76ee\u6df1\u6316\\CPU-DV-Portfolio-20261024\\APB3_SPI_Master_Controller\\formal",
+      "cover_reached": []
+    },
+    {
+      "name": "rx",
+      "mode": "prove",
+      "expected": "PASS",
+      "status": "PASS",
+      "returncode": 0,
+      "elapsed_seconds": 12.906,
+      "checked": true,
+      "command": [
+        "F:\\EDA\\oss-cad-suite\\bin\\sby.EXE",
+        "-f",
+        "-d",
+        "..\\results\\formal\\20261024T094901982316Z\\rx",
+        "spi.sby",
+        "rx"
+      ],
+      "cwd": "D:\\\u79cb\u62db\u76f8\u5173\\\u9879\u76ee\u6df1\u6316\\CPU-DV-Portfolio-20261024\\APB3_SPI_Master_Controller\\formal",
+      "cover_reached": []
+    },
+    {
+      "name": "cover",
+      "mode": "cover",
+      "expected": "PASS",
+      "status": "PASS",
+      "returncode": 0,
+      "elapsed_seconds": 2.156,
+      "checked": true,
+      "command": [
+        "F:\\EDA\\oss-cad-suite\\bin\\sby.EXE",
+        "-f",
+        "-d",
+        "..\\results\\formal\\20261024T094901982316Z\\cover",
+        "spi.sby",
+        "cover"
+      ],
+      "cwd": "D:\\\u79cb\u62db\u76f8\u5173\\\u9879\u76ee\u6df1\u6316\\CPU-DV-Portfolio-20261024\\APB3_SPI_Master_Controller\\formal",
+      "cover_reached": [
+        [
+          "cover_start",
+          "6"
+        ],
+        [
+          "cover_busy_reprogram",
+          "8"
+        ],
+        [
+          "cover_finish_after_reprogram",
+          "8"
+        ]
+      ]
+    }
+  ],
+  "passed": true,
+  "property_counts": {
+    "reset": 6,
+    "config": 4,
+    "timing": 6,
+    "rx": 2,
+    "cover": 3
+  }
+}

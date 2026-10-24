@@ -1,0 +1,21 @@
+test_byte_lane_masks (test_reference_model.AddressModelTest.test_byte_lane_masks) ... ok
+test_fixed_at_page_end_is_not_increment (test_reference_model.AddressModelTest.test_fixed_at_page_end_is_not_increment) ... ok
+test_fixed_burst_never_exceeds_16 (test_reference_model.AddressModelTest.test_fixed_burst_never_exceeds_16) ... ok
+test_fixed_keeps_address (test_reference_model.AddressModelTest.test_fixed_keeps_address) ... ok
+test_increment_by_transfer_size (test_reference_model.AddressModelTest.test_increment_by_transfer_size) ... ok
+test_mask_validator (test_reference_model.AddressModelTest.test_mask_validator) ... ok
+test_reject_address_overflow (test_reference_model.AddressModelTest.test_reject_address_overflow) ... ok
+test_reject_bad_wrap_length (test_reference_model.AddressModelTest.test_reject_bad_wrap_length) ... ok
+test_reject_burst_larger_than_configuration (test_reference_model.AddressModelTest.test_reject_burst_larger_than_configuration) ... ok
+test_reject_increment_crossing_4kb (test_reference_model.AddressModelTest.test_reject_increment_crossing_4kb) ... ok
+test_reject_reserved_burst (test_reference_model.AddressModelTest.test_reject_reserved_burst) ... ok
+test_reject_unaligned (test_reference_model.AddressModelTest.test_reject_unaligned) ... ok
+test_single_beat_incr (test_reference_model.AddressModelTest.test_single_beat_incr) ... ok
+test_wrap_at_page_end_stays_in_wrap_block (test_reference_model.AddressModelTest.test_wrap_at_page_end_stays_in_wrap_block) ... ok
+test_wrap_four_words (test_reference_model.AddressModelTest.test_wrap_four_words) ... ok
+test_wrap_uses_current_address_after_first_wrap (test_reference_model.AddressModelTest.test_wrap_uses_current_address_after_first_wrap) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.001s
+
+OK
