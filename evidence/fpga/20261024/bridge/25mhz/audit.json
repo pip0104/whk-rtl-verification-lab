@@ -1,0 +1,12 @@
+{
+  "ended_at": "2026-10-24T19:15:17.0646085+08:00",
+  "json_sha256_after": "AF3BCBB20DF1CE0AA3B7948D5C9147C3415C233A7173A15E31721726DA24FF77",
+  "json_sha256_before": "AF3BCBB20DF1CE0AA3B7948D5C9147C3415C233A7173A15E31721726DA24FF77",
+  "routed_config_exists": true,
+  "target_mhz": 25,
+  "io": "automatic; no board pin constraints",
+  "rtl_sha256": "721248B6C2B17AFD2C4A5E53A1172D90FE38409BF2273678B57931D66860AF9B",
+  "seed": 1,
+  "pnr25_exit": 0,
+  "started_at": "2026-10-24T19:15:08.3565249+08:00"
+}

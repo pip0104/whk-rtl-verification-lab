@@ -70,7 +70,7 @@ $py = 'C:\Users\Pip\Documents\总线验证\AXI4_AHB5_Lite_Bridge\.venv_cocotb\Sc
 
 - 本桥没有新增 formal harness、prove/cover 结果或 UVM 实现；SVA 源码存在不代表已执行。
 - 没有 CPU/LSU 接入、RISC-V 指令或 ISS 差分验证、上游开源 CPU PR、FPGA 上板。
-- 没有重跑新 RTL 的代码覆盖、综合/布局布线或 STA；旧资源与频率不能直接沿用。
+- 新 RTL 的 FPGA 综合、布局布线与内部时钟时序分析已在本日后续完成，见[独立 FPGA 报告](../../docs/20261024_fpga_implementation.md)。代码覆盖和 ASIC STA 尚未重跑；旧版资源、频率和百分比不能沿用。
 - 后端仍串行执行，AW 同拍优先，无公平性保证；缺失 W 数据或外部永久背压仍可永久阻塞，没有超时机制。
 - 本次主功能回归为默认 FIFO 16 深度；8/32/64/128 只有参数展开，不宣称都完成相同功能矩阵。
 

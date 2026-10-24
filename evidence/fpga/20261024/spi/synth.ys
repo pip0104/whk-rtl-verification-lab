@@ -1,0 +1,8 @@
+# Read RTL with the slang SystemVerilog frontend; the SVA assertion file is
+# intentionally excluded, same as the Icarus flow.
+read_slang rtl/apb3_spi_master.sv
+hierarchy -check -top apb3_spi_master
+# Synthesize/map to iCE40 primitives and emit the JSON nextpnr needs
+synth_ice40 -top apb3_spi_master -json build/synth/spi_ice40.json
+# Post-mapping resource stats (LUT / DFF / BRAM)
+stat

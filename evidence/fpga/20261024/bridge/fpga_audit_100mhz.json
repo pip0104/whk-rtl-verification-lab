@@ -1,0 +1,11 @@
+{
+  "ended_at": "2026-10-24T19:14:49.6323607+08:00",
+  "io": "automatic; no board pin constraints",
+  "target": "LFE5U-85F CABGA554",
+  "script": "scripts/run_synth_timing.ps1",
+  "yosys_exit": 0,
+  "started_at": "2026-10-24T19:14:37.3418610+08:00",
+  "seed": 1,
+  "rtl_sha256": "721248B6C2B17AFD2C4A5E53A1172D90FE38409BF2273678B57931D66860AF9B",
+  "pnr100_exit": 1
+}

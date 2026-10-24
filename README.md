@@ -1,6 +1,6 @@
 # WHK RTL Verification Lab
 
-Two educational RTL projects with executable verification: an APB3 SPI master and an AXI4-to-AHB-Lite bridge. The focus of the 2026-10-24 work is reproducible bug discovery, correction, regression and scoped formal verification.
+Two educational RTL projects with executable verification: an APB3 SPI master and an AXI4-to-AHB-Lite bridge. The 2026-10-24 work includes reproducible bug discovery, correction, regression, scoped formal verification and device-level FPGA synthesis/place-and-route.
 
 Repository: [pip0104/whk-rtl-verification-lab](https://github.com/pip0104/whk-rtl-verification-lab). See [GitHub Actions](https://github.com/pip0104/whk-rtl-verification-lab/actions) for actual hosted verification results.
 
@@ -10,6 +10,7 @@ Repository: [pip0104/whk-rtl-verification-lab](https://github.com/pip0104/whk-rt
 - [SPI divider defect and directed regression](WHK_APB3_SPI_Master_Controller/docs/20261024_spi_fix.md)
 - [SPI formal scope, assumptions and results](WHK_APB3_SPI_Master_Controller/docs/20261024_formal.md)
 - [Bridge phase, boundary and regression corrections](WHK_AXI4_AHB5_Lite_Bridge/docs/20261024_bridge_fix.md)
+- [Current-RTL FPGA implementation and timing scope](docs/20261024_fpga_implementation.md): iCE40 HX8K at 50 MHz and ECP5-85F at 25 MHz; internal clock targets passed, no board testing.
 - [GitHub publication status](docs/GitHub发布说明.md)
 - Fresh machine-readable results: `results/verification_summary.json` after a run.
 
@@ -39,7 +40,7 @@ GitHub Actions uses the same entrypoint. The complete simulation and scoped form
 - SPI formal claims cover only the named properties/configurations and listed assumptions. A bounded counterexample search, a successful unbounded proof and a reachable cover are different results.
 - SPI UVM sources are an incomplete migration scaffold; these projects are not claimed to have completed UVM regressions.
 - This repository does not claim CPU core validation, ISS differential checking, FPGA board operation, chip signoff or contributions merged into an upstream CPU project.
-- Inherited documents, coverage percentages and implementation/timing estimates predate this change. They are historical background, not fresh evidence. Start with the dated reports above and current run summaries.
+- Inherited documents and older coverage/implementation estimates are historical background. The dated FPGA report and `evidence/fpga/20261024/` contain fresh implementation results for the corrected RTL. Neither IP met the attempted 100 MHz target. External IO timing is not constrained and pins are automatically allocated; this is not board-level timing closure.
 - The bridge's current AHB mapping and supported restrictions are defined in its updated specification. Do not infer full AXI/AHB feature compliance from the project title.
 
 ## Repository contents

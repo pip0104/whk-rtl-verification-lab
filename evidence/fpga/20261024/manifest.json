@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "files": [
+    {
+      "path": "bridge/25mhz/audit.json",
+      "bytes": 517,
+      "sha256": "c1c58f41c7374bb311b2311dab8718115c7836681ab9c21de3a7f80344f0746e"
+    },
+    {
+      "path": "bridge/25mhz/nextpnr.log",
+      "bytes": 143022,
+      "sha256": "8c19c5283971b33e873360175f12b6cfce3ecb19151da0d07d1b68676681fbaa"
+    },
+    {
+      "path": "bridge/25mhz/report.json",
+      "bytes": 213647,
+      "sha256": "f2b48109ea5ee1377de5807d5f520e93d30dd56ba718c887266c77bd774cd86f"
+    },
+    {
+      "path": "bridge/fpga_audit_100mhz.json",
+      "bytes": 379,
+      "sha256": "6ac0a6d2299e70e8b4c01b10ac43e083e77203e57bcc486ad58acda49068dc6e"
+    },
+    {
+      "path": "bridge/nextpnr_ecp5.log",
+      "bytes": 143046,
+      "sha256": "75abda867a13aa77206491790a6390c721cb114dfdef5f9f2c0516e8a3977968"
+    },
+    {
+      "path": "bridge/nextpnr_ecp5_timing.json",
+      "bytes": 213648,
+      "sha256": "d33d580bc1e773a4c0390ae819214755561a1ea8e4289f3de6d612c874f7c44f"
+    },
+    {
+      "path": "bridge/synth.ys",
+      "bytes": 725,
+      "sha256": "af9d4687b39957111a226c222be9f2d064c880ada03736e6569cf3e393db1beb"
+    },
+    {
+      "path": "bridge/yosys_synth.log",
+      "bytes": 199756,
+      "sha256": "4d5e8cb46a76e2637b8555642a67d686e3b319e955fd5ec320e5bb30954aa2ad"
+    },
+    {
+      "path": "recipe_verification.json",
+      "bytes": 668,
+      "sha256": "e38f0b1a587f15b90e9c939969cada3db17289b4ad08e09b71d3579a64f60ab2"
+    },
+    {
+      "path": "spi/nextpnr_ice40.log",
+      "bytes": 67299,
+      "sha256": "229f58d378f1a1309e82774dcfe79c15e225ec0d80484f7a1eed2364c37f1c0d"
+    },
+    {
+      "path": "spi/nextpnr_ice40_50mhz.log",
+      "bytes": 67297,
+      "sha256": "4a603b1e4ade27075c16d0a1e0a2e151b5cf6d33339d71bf1add3c2bd8f7a3c1"
+    },
+    {
+      "path": "spi/nextpnr_ice40_50mhz_timing.json",
+      "bytes": 90480,
+      "sha256": "f00233bbedcec66a7bec51060ff2d67300f899d2b587d5eba997460cd39d3e62"
+    },
+    {
+      "path": "spi/nextpnr_ice40_timing.json",
+      "bytes": 90481,
+      "sha256": "b75b29abe8f6eb1d60fe51c5273dbeaea40d7d9bb57b36745daa4363ba438f53"
+    },
+    {
+      "path": "spi/synth.ys",
+      "bytes": 389,
+      "sha256": "9a6501101696d8fd983d8e480ac7145789842419d104fafe9aeb2187b5c45d65"
+    },
+    {
+      "path": "spi/yosys_synth.log",
+      "bytes": 111167,
+      "sha256": "b5a9a7360b771fa4d38e996e7ed0c2d0596b0306e3272403cdd0c9746e63d835"
+    },
+    {
+      "path": "summary.json",
+      "bytes": 4934,
+      "sha256": "e905ee3199e0e3ffd3d039afbd0cafa34c3e2d70fc95f53e65e077fc50f07a1b"
+    }
+  ]
+}

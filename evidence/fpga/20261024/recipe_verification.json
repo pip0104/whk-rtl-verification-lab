@@ -1,0 +1,23 @@
+{
+  "command_source": "docs/20261024_fpga_implementation.md",
+  "source_sha256": "4184f529f80a37c8cc9bcfcbcbf99389422a6c1c1fc3bf489b8fd1a54aa9d9a8",
+  "result": "PASS: both published PowerShell blocks executed locally, all subprocess exit checks passed",
+  "projects": {
+    "WHK_APB3_SPI_Master_Controller": {
+      "fmax": {
+        "pclk$SB_IO_IN_$glb_clk": {
+          "achieved": 73.98091125488281,
+          "constraint": 50
+        }
+      }
+    },
+    "WHK_AXI4_AHB5_Lite_Bridge": {
+      "fmax": {
+        "$glbnet$clk$TRELLIS_IO_IN": {
+          "achieved": 37.325965881347656,
+          "constraint": 25
+        }
+      }
+    }
+  }
+}

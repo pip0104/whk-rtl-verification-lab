@@ -1,0 +1,12 @@
+# Read RTL with the slang SystemVerilog frontend (full SV: packages, import, structs).
+# The SVA assertion file is intentionally excluded, same as the Icarus flow.
+# If read_slang is unavailable in your yosys build, the fallback is
+#   read_verilog -sv rtl/axi4_ahb5_lite_bridge_pkg.sv
+#   read_verilog -sv rtl/axi4_ahb5_lite_bridge.sv
+# but note that yosys's built-in parser rejects a module-scope "import pkg::*" in this design.
+read_slang rtl/axi4_ahb5_lite_bridge_pkg.sv rtl/axi4_ahb5_lite_bridge.sv
+hierarchy -check -top axi4_ahb5_lite_bridge
+# Synthesize/map to ECP5 primitives and emit the JSON nextpnr needs
+synth_ecp5 -top axi4_ahb5_lite_bridge -json build/synth/bridge_ecp5.json
+# Post-mapping resource stats
+stat

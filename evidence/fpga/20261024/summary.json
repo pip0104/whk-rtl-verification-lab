@@ -1,0 +1,212 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-24T19:16:34.4187289+08:00",
+  "source_commit": "7c67af9849252aada3904c013f83538d561d0772",
+  "toolchain": {
+    "nextpnr": "0.10-100-gfb95bb8e",
+    "yosys": "0.67+94 7defa5186-dirty"
+  },
+  "scope": "Device-level open-source FPGA synthesis and placement/routing. No board testing.",
+  "limitations": [
+    "Automatically allocated IO pins; no board PCF/LPF.",
+    "External IO timing and source-synchronous SPI interface timing are not closed.",
+    "Fmax values describe internal clock timing estimates, not measured hardware speed.",
+    "The 100 MHz target failed for both IPs; lower targets passed.",
+    "This evidence does not establish Vivado/Quartus experience."
+  ],
+  "spi": {
+    "seed": 1,
+    "target_mhz": 50,
+    "rtl_sha256": "65C6D4C608C4C92643B61FD2CAB62A4B4F1C74E2F5E7CA7DD550CA1FCE53B2B4",
+    "device": "iCE40 HX8K",
+    "package": "CT256",
+    "bitstream_pack_exit": 0,
+    "utilization": {
+      "ICESTORM_LC": {
+        "available": 7680,
+        "used": 804
+      },
+      "ICESTORM_PLL": {
+        "available": 2,
+        "used": 0
+      },
+      "ICESTORM_RAM": {
+        "available": 32,
+        "used": 0
+      },
+      "SB_GB": {
+        "available": 8,
+        "used": 6
+      },
+      "SB_IO": {
+        "available": 206,
+        "used": 108
+      },
+      "SB_WARMBOOT": {
+        "available": 1,
+        "used": 0
+      }
+    },
+    "pnr_exit": 0,
+    "errors": 0,
+    "fmax": {
+      "pclk$SB_IO_IN_$glb_clk": {
+        "achieved": 73.98091125488281,
+        "constraint": 50
+      }
+    },
+    "warnings": 1,
+    "bitstream": {
+      "generated": true,
+      "tracked": false,
+      "bytes": 135100,
+      "sha256": "8963f5c1fcbde2ccc616e081779dafaa0d6fd614d0367a3ae247e6ca955cfadf"
+    }
+  },
+  "bridge": {
+    "seed": 1,
+    "target_mhz": 25,
+    "rtl_sha256": "721248B6C2B17AFD2C4A5E53A1172D90FE38409BF2273678B57931D66860AF9B",
+    "device": "ECP5-85F",
+    "package": "CABGA554",
+    "bitstream_pack_exit": 0,
+    "parameters": {
+      "ADDR_WIDTH": 32,
+      "MAX_BURST_BEATS": 16,
+      "DATA_WIDTH": 32,
+      "FIFO_DEPTH": 16,
+      "ID_WIDTH": 4
+    },
+    "pnr_exit": 0,
+    "fmax": {
+      "$glbnet$clk$TRELLIS_IO_IN": {
+        "achieved": 37.325965881347656,
+        "constraint": 25
+      }
+    },
+    "pnr_error_entries": 0,
+    "utilization": {
+      "ALU54B": {
+        "available": 78,
+        "used": 0
+      },
+      "CLKDIVF": {
+        "available": 4,
+        "used": 0
+      },
+      "DCCA": {
+        "available": 56,
+        "used": 1
+      },
+      "DCSC": {
+        "available": 2,
+        "used": 0
+      },
+      "DCUA": {
+        "available": 2,
+        "used": 0
+      },
+      "DDRDLL": {
+        "available": 4,
+        "used": 0
+      },
+      "DLLDELD": {
+        "available": 8,
+        "used": 0
+      },
+      "DP16KD": {
+        "available": 208,
+        "used": 0
+      },
+      "DQSBUFM": {
+        "available": 14,
+        "used": 0
+      },
+      "DTR": {
+        "available": 1,
+        "used": 0
+      },
+      "ECLKBRIDGECS": {
+        "available": 2,
+        "used": 0
+      },
+      "ECLKSYNCB": {
+        "available": 10,
+        "used": 0
+      },
+      "EHXPLLL": {
+        "available": 4,
+        "used": 0
+      },
+      "EXTREFB": {
+        "available": 2,
+        "used": 0
+      },
+      "GSR": {
+        "available": 1,
+        "used": 0
+      },
+      "IOLOGIC": {
+        "available": 224,
+        "used": 0
+      },
+      "JTAGG": {
+        "available": 1,
+        "used": 0
+      },
+      "MULT18X18D": {
+        "available": 156,
+        "used": 14
+      },
+      "OSCG": {
+        "available": 1,
+        "used": 0
+      },
+      "PCSCLKDIV": {
+        "available": 2,
+        "used": 0
+      },
+      "SEDGA": {
+        "available": 1,
+        "used": 0
+      },
+      "SIOLOGIC": {
+        "available": 141,
+        "used": 0
+      },
+      "TRELLIS_COMB": {
+        "available": 83640,
+        "used": 2038
+      },
+      "TRELLIS_ECLKBUF": {
+        "available": 8,
+        "used": 0
+      },
+      "TRELLIS_FF": {
+        "available": 83640,
+        "used": 157
+      },
+      "TRELLIS_IO": {
+        "available": 365,
+        "used": 305
+      },
+      "TRELLIS_RAMW": {
+        "available": 10455,
+        "used": 25
+      },
+      "USRMCLK": {
+        "available": 1,
+        "used": 0
+      }
+    },
+    "pnr_warning_entries": 0,
+    "bitstream": {
+      "generated": true,
+      "tracked": false,
+      "bytes": 1927725,
+      "sha256": "13908160e7cc06c2cd361201c46378c71a6d5c17b21d4f09d1623eed6249273c"
+    }
+  },
+  "evidence_location": "evidence/fpga/20261024",
+  "validation_location": "Windows local run; FPGA flow has not been claimed as a hosted CI run"
+}

@@ -1,5 +1,7 @@
 # WHK APB3 SPI Master Controller RTL and Verification
 
+**2026-10-24 FPGA 更新：**当前修复版 RTL 已用 Yosys + nextpnr 在 iCE40 HX8K/CT256 上完成综合、布局布线和位流生成；占用 804 LC，内部 PCLK 的 50 MHz 目标通过，100 MHz 未通过。自动引脚分配、未约束外部 I/O 时序、未上板。[新报告与复现命令](../docs/20261024_fpga_implementation.md)。下文旧版 FPGA/ASIC 数值仍为历史基线。
+
 这是一个可复用的学习型 SPI Master IP：APB3 从接口完成寄存器配置，SPI 侧输出 `SCLK/MOSI/CS_n` 并采样 `MISO`。项目将 RTL、独立帧级参考模型、Icarus smoke、cocotb 端到端回归、事务级功能覆盖、可迁移 UVM 环境和 Verilator 代码覆盖入口放在同一目录中。
 
 ## 已交付的真实证据

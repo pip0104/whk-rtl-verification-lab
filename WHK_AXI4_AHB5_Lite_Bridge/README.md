@@ -2,7 +2,7 @@
 
 **2026-10-24 当前实现：**已修正 AHB 地址/数据相位、两周期 ERROR、后续拍非法写的整笔预检、AXI 4KB 边界，并新增必达功能 bin 门槛与独立 JUnit 文件。[本次实际 RED/GREEN 报告](docs/20261024_bridge_fix.md)。每个 AXI beat 现在独立映射为 AHB SINGLE/NONSEQ，保留 FIXED/INCR/WRAP 地址语义，不再输出 AHB 多拍 burst。
 
-下文 2026-09/10 的代码覆盖、综合、布局布线和 STA 数值是旧 RTL 的历史基线，不能归属本次修改后的 RTL。本次只重跑仿真与参数展开，不声称 UVM、整桥形式证明、上板或新时序收敛。
+下文 2026-09/10 的代码覆盖、综合、布局布线和 STA 数值是旧 RTL 的历史基线，不能归属本次修改后的 RTL。当前修复版现已另行完成 ECP5-85F/CABGA554 综合、布局布线和位流生成，内部时钟 25 MHz 目标通过，100 MHz 未通过；自动引脚分配，未约束外部 I/O 时序、未上板。[本日 FPGA 新报告](../docs/20261024_fpga_implementation.md)。不声称本桥 UVM 回归、整桥形式证明或板级时序收敛。
 
 这是一个学习型芯片验证项目。桥接器在上游是 AXI4 Slave，在下游是 AHB5-Lite Master；可执行验证使用 SystemVerilog + cocotb，检查正常、背压、错误、FIFO 满和复位条件下的协议转换。UVM 是后续迁移计划。
 
