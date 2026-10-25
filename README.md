@@ -4,9 +4,23 @@ Two educational RTL projects with executable verification: an APB3 SPI master an
 
 Repository: [pip0104/whk-rtl-verification-lab](https://github.com/pip0104/whk-rtl-verification-lab). See [GitHub Actions](https://github.com/pip0104/whk-rtl-verification-lab/actions) for actual hosted verification results.
 
+[![RTL verification](https://github.com/pip0104/whk-rtl-verification-lab/actions/workflows/verify.yml/badge.svg)](https://github.com/pip0104/whk-rtl-verification-lab/actions/workflows/verify.yml)
+
+## Latest verified status
+
+The latest completed RTL remains the corrected 2026-10-24 baseline. A fresh Windows simulation and scoped-formal run on **2026-10-26 passed**; see the [dated verification report](docs/20261026_verification_status.md) for commands, source hashes and scope. No RTL change was needed for this refresh.
+
+| Project | Fresh local verification on 2026-10-26 | Existing implementation evidence |
+|---|---|---|
+| APB3 SPI Master | 12 reference-model tests, original cocotb regression, 24 directed/boundary tests; transaction bins 23/23; 4 scoped proof groups / 18 assertions and 3 reachable covers | 2026-10-24 corrected-RTL iCE40 HX8K implementation, 804 LC, internal 50 MHz target passed |
+| AXI4 to AHB5-Lite Bridge | 16 reference-model tests, 5 cocotb tests; transaction bins 36/36; smoke and parameter elaboration checks | 2026-10-24 corrected-RTL ECP5 implementation, internal 25 MHz target passed |
+
+The FPGA source hashes still match the current RTL; synthesis/place-and-route was **not** rerun on 2026-10-26. These are device-level implementation reports, with no board operation or external-IO timing closure claim. The 24 new SPI cases include the 8 cases that fail on the old divider implementation; they are not 32 separate cases.
+
 ## Start here
 
 - [Current evidence and interview wording](docs/面试证据与口径.md)
+- [2026-10-26 full local verification refresh](docs/20261026_verification_status.md)
 - [SPI divider defect and directed regression](WHK_APB3_SPI_Master_Controller/docs/20261024_spi_fix.md)
 - [SPI formal scope, assumptions and results](WHK_APB3_SPI_Master_Controller/docs/20261024_formal.md)
 - [Bridge phase, boundary and regression corrections](WHK_AXI4_AHB5_Lite_Bridge/docs/20261024_bridge_fix.md)
@@ -48,3 +62,7 @@ GitHub Actions uses the same entrypoint. The complete simulation and scoped form
 Generated executables, virtual environments, full build directories, large waveforms and local result directories are ignored. Selected compact evidence is retained under `evidence/`; regenerate full reports using the commands above. Original project directories and supplied ZIPs were preserved outside this independent repository.
 
 This public repository starts from the verified source snapshot. Baseline commit identifiers in frozen evidence refer to the preserved local development history. The baseline RTL is included as a file, so reproducing its failure does not require those local commits. Commits here use a GitHub noreply address.
+
+## Future updates
+
+Develop and verify changes in this repository, keep older dated evidence intact, then commit and push the completed change to the same remote. Refresh requirement/test links and interview wording when behavior or measured results change. Follow [AGENTS.md](AGENTS.md) for verification and publication rules; no timed or background synchronization is configured.
